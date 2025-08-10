@@ -3,22 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giới thiệu sản phẩm</title>
+  <title>Form đăng ký tài khoản</title>
+  <style>
+    #lbl-describe{
+      width: 350px;
+      height: 60px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Giới thiệu sản phẩm</h1>
-  </header>
-  <main>
-    <section>
-      <article>
-        <h2>Điện thoại Iphone 15 Pro Max</h2>
-        <img src="./118-1920x1080.jpg" alt="" width="500">
-        <br>
-        <a href="https://fullstack.edu.vn/" target="_blank">Mua ngay tại đây</a>
-      </article>
-    </section>
-  </main>
+  <h2>Form đăng ký tài khoản</h2>
+  <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+    <div>
+      <label for="lbl-fullname">Họ tên:</label>
+      <input type="text" id="lbl-fullname" name="fullname">
+    </div>
+    <div>
+      <label for="lbl-email">Email:</label>
+      <input type="email" id="lbl-email" name="email">
+    </div>
+    <div>
+      <label for="lbl-password">Mật khẩu:</label>
+      <input type="password" name="password" id="lbl-password">
+    </div>
+    <div>
+      <label for="lbl-date">Ngày sinh:</label>
+      <input type="date" name="date" id="lbl-date">
+    </div>
+    <div>
+      <label>Giới tính:</label>
+      <label>
+        <input type="radio" name="gender" value="male">Nam
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female">Nữ
+      </label>
+      <label>
+        <input type="radio" name="gender" value="others">Khác
+      </label>
+    </div>
+    <div>
+      <label>Sở thích:</label>
+      <label>
+        <input type="checkbox" name="hobby" value="read">Đọc sách
+      </label>
+      <label>
+        <input type="checkbox" name="hobby" value="travel">Du lịch
+      </label>
+      <label>
+        <input type="checkbox" name="hobby" value="sports">Thể thao
+      </label>
+    </div>
+    <div>
+      <label for="lbl-describe">Mô tả bản thân:</label>
+      <div>
+        <textarea name="describe" id="lbl-describe"></textarea>
+      </div>
+    </div>
+    <button type="submit">Đăng ký</button>
+    <button type="button">Xóa</button>
+  </form>
   
 </body>
 </html>

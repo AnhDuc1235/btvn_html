@@ -3,19 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Công thức</title>
+  <title>Form đăng nhập + 2FA</title>
 </head>
 <body>
-  <header>
-  </header>
-  <main>
-    <section>
-      <article>
-        <h2>Công thức</h2>
-        <p>Nước: H<sub>2</sub>O <br>Phương trình: x<sup>2</sup> + y<sup>2</sup> = z<sup>2</sup></p>
-      </article>
-    </section>
-  </main>
+  <h2>Form đăng nhập + 2FA</h2>
+  <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+    <div>
+      <label for="lbl-email">Email:</label>
+      <input type="email" id="lbl-email" name="email">
+    </div>
+    <div>
+      <label for="lbl-password">Mật khẩu:</label>
+      <input type="password" name="password" id="lbl-password">
+    </div>
+    <div>
+      <label for="lbl-otp">Mã OTP:</label>
+      <input type="text" name="otp" id="lbl-otp">
+    </div>
+    <button type="submit">Đăng ký</button>
+    <button type="button">Hủy</button>
+  </form>
+  
   
 </body>
 </html>

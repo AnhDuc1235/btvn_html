@@ -3,18 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lịch sử chỉnh sửa</title>
+  <title>Form khảo sát ý kiến</title>
+  <style>
+    #lbl-describe{
+      width: 350px;
+      height: 60px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-  </header>
-  <main>
-    <section>
-      <article>
-        <h2>Lịch sử chỉnh sửa</h2>
-        <p>Giá sản phẩm ban đầu là <del>20.000.000đ</del>, sau đó giảm còn <u>18.000.000đ</u>. <del>Không còn hàng</del> → <u>Còn hàng</u></p>
-      </article>
-    </section>
-  </main>
+  <h2>Form khảo sát ý kiến</h2>
+  <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+    <div>
+      <label for="lbl-fullname">Họ tên:</label>
+      <input type="text" id="lbl-fullname" name="fullname">
+    </div>
+    <div>
+      <label for="lbl-satisfy">Mức độ hài lòng:</label>
+      <input type="range" id="lbl-satisfy" name="satisfy">
+    </div>
+    <div>
+      <label for="lbl-time">Thời gian liên hệ:</label>
+      <input type="time" name="time" id="lbl-time" style="width: 70px;">
+    </div>
+    <div>
+      <label>Kênh thông tin:</label>
+      <label>
+        <input type="checkbox" name="hobby" value="Facebook">Facebook
+      </label>
+      <label>
+        <input type="checkbox" name="hobby" value="Youtube">Youtube
+      </label>
+      <label>
+        <input type="checkbox" name="hobby" value="Website">Website
+      </label>
+    </div>
+    <div>
+      <label for="lbl-describe">Góp ý khác:</label>
+      <div>
+        <textarea name="describe" id="lbl-describe"></textarea>
+      </div>
+    </div>
+    <button type="submit">Gửi</button>
+  </form>
 </body>
 </html>

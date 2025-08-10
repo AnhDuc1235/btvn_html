@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novell Services Login</title>
+</head>
+<body>
+  <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+  <table>
+    <tr>
+      <th colspan="2">
+        <h2>Novell Services Login</h2>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        Username:
+      </td>
+      <td>
+        <input type="text" name="username" id="lbl-username" style="width: 200px;">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Password:
+      </td>
+      <td>
+        <input type="password" name="password" id="lbl-password" style="width: 200px;">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        City of <br>employment:
+      </td>
+      <td>
+        <input type="password" name="city" id="lbl-city" style="width: 200px;">
+      </td>
+    </tr> 
+    <tr>
+      <td>
+        Web server:
+      </td>
+      <td>
+        <select name="webserver" id="lbl-webserver">
+          <option value="0">-Choose a server-</option>
+          <option value="1">test</option>
+        </select>
+      </td>
+
+    </tr>
+    <tr>
+      <td>
+        Please specify <br>your role:
+      </td>
+      <td>
+        <div>
+          <label><input type="radio" name="admin" id="lbl-admin" value="admin">Admin</label>
+        </div>
+        <div>
+          <label><input type="radio" name="engineer" id="lbl-engineer" value="engineer">Engineer</label>
+        </div>
+        <div>
+          <label><input type="radio" name="manager" id="lbl-manager" value="manager">manager</label>
+        </div>
+        <div>
+          <label><input type="radio" name="guest" id="lbl-guest" value="guest">Guest</label>
+        </div>
+        
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Single Sign-on <br>to the following:
+      </td>
+      <td>
+        <div>
+          <label><input type="checkbox" name="mail" id="lbl-mail">Mail</label>
+        </div>
+        <div>
+          <label><input type="checkbox" name="payroll" id="lbl-payroll">Payroll</label>
+        </div>
+        <div>
+          <label><input type="checkbox" name="selfservice" id="lbl-selfservice">Selfservice</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2" >
+        <button type="submit">Login</button>
+        <button type="reset">Reset</button>
+      </th>
+    </tr>
+  </table>
+  </form>
+</body>
+</html>
