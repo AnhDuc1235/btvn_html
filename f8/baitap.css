@@ -22,10 +22,10 @@ a:hover{
 button:active{
     background-color: green;
 }
-ul:first-child{
+ul li:first-child{
     color: blue;
 }
-ol:last-child{
+ol li:last-child{
     color: red;
 }
 ul li:nth-child(2n-1){
@@ -46,7 +46,7 @@ ol li::after {
     content: "✔";
 }
 p::first-letter{
-    font-size: large;
+    font-size: 30px;
     color: red;
 }
 p::first-line{
