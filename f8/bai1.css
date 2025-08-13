@@ -1,0 +1,57 @@
+/* bai 1 */
+h1 {
+    color: red;
+}
+.highlight{
+    color: green;
+}
+#special{
+    text-decoration: underline;
+}
+.box p{
+    background-color: yellow;
+}
+ul li{
+    border: 2px solid black;
+}
+
+/* bai 2 */
+a:hover{
+    color: orange;
+}
+button:active{
+    background-color: green;
+}
+ul:first-child{
+    color: blue;
+}
+ol:last-child{
+    color: red;
+}
+ul li:nth-child(2n-1){
+    background-color: grey;
+
+}
+ol li:nth-child(2n-1){
+    background-color: grey;
+
+}
+
+/* bai 3 */
+h2::before{
+    content: "👉";
+}
+ul li::after,
+ol li::after {
+    content: "✔";
+}
+p::first-letter{
+    font-size: large;
+    color: red;
+}
+p::first-line{
+    background-color: yellow;
+}
+p::selection{
+    background-color: green;
+}

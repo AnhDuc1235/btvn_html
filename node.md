@@ -47,3 +47,111 @@ table--> tr --> td
 
 cellspacing: khoảng cách giữa các ô trong bảng
 cellpadding: khoảng cách giữa ô với nội dung
+
+## Chưa cóp buổi 3
+
+## buổi 4
+
+3. Selector kết hợp
+
+3.1. Nẳm trong
+
+```css
+selector1 selector2 selector3 {
+  thuoctinh: giatri;
+}
+```
+
+Lưu ý: không giới hạn cấp
+
+3.2. Cha conn
+
+````css
+selector > selector2 selector3 {
+  thuoctinh: giatri;
+}
+
+chọn cấp con gần nhất 3.3. cùng cấp ```css selector1selector2selector3 {
+  thuoctinh: giatri;
+}
+````
+
+chọn phần tử html thỏa mãn các selector
+
+3.4 kế thừa
+
+```css
+selector1,
+selector2,
+selector3 {
+  thuoctinh: giatri;
+}
+```
+
+Các selector sẽ được áp dụng cùng các thuộc tính trong 1 khối
+
+3.5. Ngang hàng
+
+```css
+selector1 ~ selector2 ~ selector3 {
+  thuoctinh: giatri;
+}
+```
+
+3.6. Ngang hàng (liền kề)
+
+````css
+selector1 + selector2 + selector3 {
+  thuoctinh: giatri;
+}
+
+4. Attribute (thuộc tính)
+
+- tagname[attribute] --> chọn thẻ html có thuộc tính
+- tagname[attribute="value"] --> chọn thẻ html có thuộc tính khớp với giá trị
+- tagname[attribute^="value"] --> chọn thẻ html có thuộc tính bắt đầu bằng giá trị
+- tagname[attribute$="value"] --> chọn thẻ html có thuộc tính kết thúc bằng giá trị
+- tagname[attribute*="value"] --> chọn thẻ html có thuộc tính chứa giá trị (contains)
+
+## Pseudo
+
+### Pseudo Element
+
+Cú pháp:
+
+```css
+selector::ten-phantu {
+  thuoctinh: giatri;
+}
+````
+
+- before
+- after
+- first-line
+- selection
+- placeholder
+
+Lưu ý: before, after muốn hoạt động phải có thuộc tính content
+
+### Pseudo Class
+
+Cú pháp:
+
+```css
+selector:ten-lop {
+  thuoctinh: giatri;
+}
+```
+
+- hover
+- active
+- focus
+- not
+- checked
+- disabled
+- first-child
+- last-child
+- first-of-type
+- last-of-type
+- nth-child
+- nth-of-type
