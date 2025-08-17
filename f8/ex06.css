@@ -1,0 +1,54 @@
+/* #red:checked ~ nav label[for="red"],
+#red:checked ~ .content{
+    color: red;
+}
+#green:checked ~ nav label[for="green"], 
+#green:checked ~ .content{
+    color: green;
+} */
+
+html{
+    font-size: 62.5%;
+}
+@font-face {
+    font-family: "svn fontbox";
+    src: url("../f8/font/SVN-Fontbox-Boathouse-Filled.otf");
+}
+h2{
+    font-family: "svn fontbox", sans-serif;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 10px;
+    text-align: left;
+}
+.text-1{
+    font-size: 10px;
+    line-height: 1.5em;
+    font-family: "svn fontbox";
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    text-align: justify;
+}
+/* body {
+    font-size: 18px;
+}
+.text-1{
+    color: #04aa6d;
+    font-size: 1.2em;
+}
+.box{
+    font-size: 20px;
+}
+.content{
+    font-size: 1.2em
+}
+.text-3{
+    font-size: 1.3em;
+}
+
+.text-2 {
+    text-transform: uppercase;
+} */

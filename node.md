@@ -52,6 +52,11 @@ cellpadding: khoảng cách giữa ô với nội dung
 
 ## buổi 4
 
+- cách viết tắt
+  Viết nhanh: ul.menu>li\*10>a{Item $}
+  Nhân dòng: alt shift lên-xuống
+  chuyển vị trí: alt lên-xuống
+
 3. Selector kết hợp
 
 3.1. Nẳm trong
@@ -155,3 +160,62 @@ selector:ten-lop {
 - last-of-type
 - nth-child
 - nth-of-type
+
+:First-child:
+
+- áp lên phần tử con đầu tiên của thẻ được chọn (thường dùng với ul li)
+- sẽ bị chặn nếu có phần tử khác loại chèn ở đầu
+- vd: ul li:first-child -> áp lên li đầu tiên của danh sách ul
+
+:Last-child:
+
+- áp lên phần tử con cuối cùng của thẻ được chọn
+- ví dụ: ol li:last-child -> áp lên li cuối cùng của danh sách ol
+
+:First-of-type:
+
+- chọn phần tử đầu tiên cùng loại
+- ví dụ: ol li:first-of-type -> áp lên con đầu tiên có loại thẻ là li và thuộc class i trong thẻ cha ol
+
+:nth
+
+## buổi 5
+
+1. các thuộc tính định dạng text
+
+- color: thay đổi màu văn bản
+- font-size: thay đổi cỡ chữ văn bản
+
+Đơn vị:
+
+- tuyệt đối: px
+- tương đối
+
+* em --> Tỷ lệ với font-size của phần tử cha
+* rem --> Tỷ lệ với font-size của chỉ duy nhất html
+* vw (viewport width)
+* vh (viewport height)
+* % (hay sử dụng tron trường hợp chỉnh width, height)
+
+- line-height:
+  Thay đổi chiều cao của dòng văn bản
+  Tỷ lệ với cỡ chữ của phần tử đó
+- font-family
+  Thay đổi font chữ của văn bản
+  Cú pháp: font-family: font1, font2,...
+  sans-serif: họ font không chân (p)
+  serif: họ font có chân (p )
+
+  muốn xem font của các web khác: bấm f12 devtool - chọn network
+  Cách nạp font vào html css:
+
+  - tải file font về, lập folder và add file font vào
+  - ở css: dùng @font-face, với font-family là đặt tên font sẽ dùng (nên đặt giống tên của loại font) và src: trỏ đường dẫn tới file font vừa tải
+
+- font-weight:
+  Thiết lập độ dày của văn bản
+  Giá trị: bội số của 100 (từ 100 đến 900, defaut là 400), normal, bold
+
+- font-style
+  - italic
+  - normal
