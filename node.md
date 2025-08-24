@@ -219,3 +219,65 @@ selector:ten-lop {
 - font-style
   - italic
   - normal
+
+## Flex
+
+### Các thuộc tính trong flex container
+
+1. Display: flex --> Kích hoạt Flexbox
+
+2. flex-direction --> Chọn hướng của trục main (mặc định nằm ngang)
+
+- row --> Nằm ngang (mặc định)
+- row-reverse --> Nằm ngang, đảo ngược
+- column --> Nằm dọc
+- column-reverse --> Nằm dọc, đảo ngược
+
+3. justify-content: Căn chỉnh các item theo hướng song song với trục main
+
+- flex-start: bắt đầu ở bên trái
+- center
+- flex-end: bắt đầu ở bên phải
+- space-around: sẽ có khoảng trắng ở bên trái phải bằng 1/2 khoảng trắng ở giữa
+- space-between: khoảng trắng ở giữa, cách sát trái và phải
+- space-evenly: các khoảng trắng đều nhau ở cả bên trái, phải, giữa
+
+4. align-items: Căn chỉnh các item theo hướng song song với trục cross
+
+- stretch --> Mặc định
+- flex-start
+- center
+- flex-end
+- baseline: baseline khác flexstart (baseline dựa theo đường baseline(tức văn bản), còn flexstart là căn theo đường cạnh)
+
+5. Flex-wrap
+
+- nowrap
+- wrap
+- wrap-reverse
+
+5. gap: Điều chỉnh khoảng cách giữa các item (gap: row-gap, column-gap)
+
+## Các thuộc tính trong flex item
+
+1. Flex-grow: Giãn item chỉ định để lấp đầy vị trí còn trống của container
+   cú pháp: flex-grow: number (Mặc định = 0) (số càng to, kích thước càng to)
+
+2. Flex-shrink: Ngược lại với flex-grow
+   Cú pháp: flex-shrink: number (Mặc định = 1) (số càng to, kích thước càng nhỏ)
+
+3. Flex-basis: Thiết lập kích thước ban đầu của item
+
+FLex-basis sẽ không chính xác nếu
+
+- có max-width, min-width
+- có max-height, min-height
+- có flex-shrink, flex-grow
+
+4. Thuộc tính order: Sắp các item theo thứ tự mong muốn
+
+Cú pháp: order: number (số nguyên)
+
+các trang web: https://cdnjs.com/ đển link library (tìm đến library của font awesome và paste vào header), font awesome để lấy các kí tự icon. phải có library thi
+
+trang luyện tập flex: https://znews.vn/
