@@ -3,138 +3,125 @@
     margin: 0;
     border: 0;
     outline: 0;
-    box-sizing: border-box;
-    text-transform: capitalize;
+    box-sizing: 0;
 }
 html {
     font-size: 10px;
 }
-img {
-    max-width: 100%;
-    height: auto;
-}
 body {
-    color: #333;
     font-size: 1.6rem;
-    line-height: 1.5;
-    font-family: system-ui, sans-serif;
-    font-weight: 500;
-    
-}
-a {
-    text-decoration: none;
-    color: #333;
-    padding: 15px 0px;
+    background-color: #2e3e4d;
 }
 li {
     list-style: none;
-}
-/***** notification *****/
-.header .notification{
-    background-color: black;
-}
-.header .notification .notification-inner{
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.header .notification .notification-inner .notification-text{
-    display: flex;
-    padding-left: 28%;
-    gap: 10px;
-}
-.header .notification .notification-text a{
-    color: #ffffffe3;
-}
-.header .notification .notification-text a:nth-child(2){
     color: #fff;
 }
-.header .notification .language{
-    display: flex;
-    gap: 12px;
-    right: 100;
+a {
+    text-decoration: none;
+    color: #fff;
 }
-.header .notification .language a{
-    color: #ffffffe3;
-}
-/***** end notification *****/
-
-/***** header-bar *****/
-.header .header-bar{
-    border-bottom: 1px solid grey;
-    padding: 50px 0px 15px 0px;
-}
-.header .header-bar .header-inner{
-    max-width: 1200px;
+.header {
+    width: 80%;
     margin: 0 auto;
+    padding-top: 30px;
+    position: relative;
+}
+.header .product-title{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    background-color: #1f4959;
+    border-radius: 8px;
+    position: relative;
 }
-.header .header-bar .header-inner .type{
-    font-weight: 700;
-    font-size: 30px;
-}
-.header .header-bar .header-inner .menu ul{
+.header .product-title .list-item{
     display: flex;
-    gap: 50px;
-    list-style: none;
+    justify-content: flex-start;
+    background-color: #1f4959;
+    border-radius: 8px;
 }
-.header .header-bar .header-inner .menu ul li:hover{
-    border-bottom: 1px solid grey;
+.header .product-title .list-item .item{
+    padding: 10px 30px;
 }
-.header .header-bar .header-inner .search{
+.header .product-title .list-item .item:hover{
+    background-color: rgb(255, 81, 0);
+    border-radius: 8px;
+}
+/* end product title */
+
+/* product-title-inner */
+
+/* level1 */
+.item {
+    position: relative;
     display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.header .header-bar .header-inner .search form,
-.header .header-bar .header-inner .search form input{
-    padding: 6px 20px 8px 10px;
-    border-radius: 5px;
-    background-color: rgb(230, 221, 221);
-}
-.header .header-bar .header-inner #lbl-search{
-    border-radius: 3px;
-    background-color: rgb(233, 228, 228);
-    padding: 0px 80px 0px 10px;
-    text-transform: lowercase;
 }
 
-/***** end header *****/
-
-/***** body *****/
-.main {   
-    border-bottom: 1px solid grey;
+.product-title-inner {
+    width: 120px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(0, 195, 255);
+    /* padding: 10px 10px 0px 10px; */
+    z-index: 1000;
 }
-.main .main-inner{
-    max-width: 1200px;
-    margin: 0 auto;
+.item:hover .product-title-inner {
+    display: block;
+}
+.level1 {
+    position: relative;
+}
+.level1 ul li{
+    width: 50px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 10px 60px 10px 10px;
 }
-.main .main-inner .category ul li a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 200px;
-}
-.main .main-inner .category {
-    border-right: 1px solid #ccc;
-    padding-right: 20px;
-    margin-right: 20px;
-}
-.main .main-inner .imgproduct .imgproduct-inner a img{
-    width: 955px;
-    height: 440px;
-}
-.main .main-inner .imgproduct .imgproduct-inner {
-    background-color: black;
-}
+/* end level1 */
 
-/***** end body *****/
+/* level2 */
+.level2 , .level3 {
+    display: none;    
+}
+.level1 .level2 li{
+    width: 60px;
+    padding: 10px 60px 10px 10px;
+    background-color: orange;
+}
+.level1 ul li:hover > .level2{
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 25%;
+}
+/* end level2 */
 
+/* level 3 */
+.level2 {
+    position: relative;
+}
+.level1 .level2 .level3 li{
+    width: 70px;
+    padding: 10px 50px 10px 10px;
+    background-color: brown;
+}
+.level2 li:hover >.level3{
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 33%;
+}
+/* end level3 */
 
+/* hr */
+.level1 ul hr{
+    border: 1px solid white;
+}
+.level1 .level2 hr{
+    border: 1px solid white;
+}
+.level1 .level2 .level3 hr{
+    border: 1px solid white;
+}
+/* end hr */

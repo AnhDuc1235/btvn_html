@@ -1,19 +1,16 @@
 * {
     margin: 0;
-    padding: 0;
     border: 0;
+    padding: 0;
     outline: 0;
-    box-sizing: border-box;
+    box-sizing: 0;
 }
-
 html {
     font-size: 10px;
+    font-family: system-ui, sans-serif;
 }
-
 body {
     font-size: 1.6rem;
-    font-family: system-ui, sans-serif;
-    color: #333;
 }
 img {
     width: 100%;
@@ -21,123 +18,239 @@ img {
 }
 a {
     text-decoration: none;
+    color: #333;
 }
+h1 {
+    color: #333;
+    text-transform: capitalize;
+    font-size: 40px;
 
-/* logo */
-.logo {
-    padding-top: 20px;
-    max-width: 1500px;
-    margin: 0 auto;
 }
-.logo .logo-inner a{
+h2 {
+    color: #333;
+    text-transform: capitalize;
+}
+.product {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+/***** today *****/
+.product-inner .today a{
+    padding-bottom: 20px;
+}
+.product-inner .today a{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
 }
-.logo .logo-inner a img {
-    width: 3%;
-    height: auto;
+.today a span:nth-child(1){
+    padding: 20px 10px;
+    background-color: red;
+    border-radius: 6px;
 }
-.logo .logo-inner a span {
-    color: #333;
-    padding: 5px 20px;
-    border-radius: 50px;
-    background-color: rgb(240, 238, 238);
+.today a span:nth-child(2){
+    color: red;
+    font-weight: 500;
 }
-.logo .logo-inner a span::before {
-    content: "#";
-    padding-right: 5px;
-    color: rgb(172, 170, 170);
-}
-/* end logo */
+/***** end today *****/
 
-/* content */
-.content {
-    max-width: 1500px;
-    height: auto;
-    margin: 0 auto;
-    padding-top: 15px;
+/***** flash-sales *****/
+
+/* days */
+.flash-sales {
     display: flex;
+    align-items: center;
 }
-.content .left{
-    width: 380px;
+.flash-sales h1{
+    width: 30%;
+}
+.timing {
+    width: 60%;
     display: flex;
-    flex-direction: column;
+    gap: 60px;
+    justify-content: flex-start;
+    /* padding-left: 80px; */
 }
-.content .left .content-left{
+.days {
+    width: 10px;
     display: flex;
     justify-content: center;
-    align-items: start;
-    /* border-bottom: 1px solid rgb(136, 133, 133);
-    padding: 15px 0px; */
+}
+.days .time {
+    position: absolute;
+    top: 70px;
+}
+.days h2 {
+    text-align: center;
+    font-size: 40px;
+}
+/* end days */
+
+/* hours */
+.hours {
+    width: 10px;
+    display: flex;
+    justify-content: center;
+}
+.hours .time {
+    position: absolute;
+    top: 70px;
+}
+.hours h2 {
+    text-align: center;
+    font-size: 40px;
+}
+/* end hours */
+/* minutes */
+.minutes {
+    width: 10px;
+    display: flex;
+    justify-content: center;
+}
+.minutes .time {
+    position: absolute;
+    top: 70px;
+}
+.minutes h2 {
+    text-align: center;
+    font-size: 40px;
+}
+/* end minutes */
+
+/* seconds */
+.seconds {
+    width: 10px;
+    display: flex;
+    justify-content: center;
+}
+.seconds .time {
+    position: absolute;
+    top: 70px;
+}
+.seconds h2 {
+    text-align: center;
+    font-size: 40px;
+}
+/* end seconds */
+
+/* page-direction */
+.page-direction {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
     gap: 10px;
 }
-.content .left hr{
-    border: 1px rgb(192, 189, 189) solid;
-    width: 373px;
-    margin: 15px 0px;
+.page-direction button {
+    padding: 20px 20px;
+    border-radius: 50px;
 }
-.content .left .content-left a img {
-    width: 150px;
-    height: 100px;
-}
-.content .left .content-left h2 {
+/* end page-direction */
+
+/***** product-sale *****/
+.product-sale {
     width: 100%;
-    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
 }
-
-/* end left */
-
-.content .center{
-    width: 800px;
-    padding: 0px 20px;
+.product-image {
+    position: relative;
+    border: 1px solid rgb(233, 228, 228);
 }
-.content .center .content-center{
+.product-image img{
+    z-index: 100;
+}
+.product-image .sale-badge{
+    background-color: red;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+}
+.icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    z-index: 100;
 }
-.content .center .content-center img {
-    height: 50vh;
+.icons a {
+    background-color: white;
+    color: #333;
+    border-radius: 50%;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid rgb(245, 236, 236);
 }
-.content .center .content-center h1{
-    font-size: 30px;
-    padding: 10px 0px;
+.overlay{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(128, 128, 128, 0.158);
+    z-index: 99;
 }
-.content .center .content-center h2{
-    font-size: 18px;
-    padding: 10px 0px;
-    
+
+/* add to cart */
+.add {
+    display: none;
+    position: absolute;
+    bottom: 0;
 }
-.content .center .content-center .dot::before {
-    content: '';
-    display: inline-block;
-    width: 5px;
-    height: 5px;
+.product-image:hover .add{
+    width: 100%;
+    height: auto;
+    display: block;
     background-color: black;
-    border-radius: 100%;
-    vertical-align: middle;
+    padding: 10px 0px;
+    text-align: center;
 }
-
-/* end center */
-
-.content .right{
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-}
-.content .right .content-right{
-    display: flex;
-    flex-direction: column;
-    /* padding: 15px 0px; */
-}
-.content .right .content-right a img {
-    background-size: 100% 100%;
-}
-.content .right .content-right h2 {
+.product-image:hover .add a{
     width: 100%;
-    font-size: 18px;
-    padding-top: 5px;
-    padding-bottom: 40px;
+    height: auto;
+    font-size: 20px;
+    color: white;
 }
+/* end add to cart */
+
+/* product-info */
+.product-info {
+    padding-top: 10px;
+}
+.sale-price {
+    padding: 10px 0px;
+}
+.after-price {
+    color: rgb(245, 59, 59);
+    padding-right: 10px;
+}
+.before-price {
+    color: rgb(194, 188, 188);
+}
+/* end product-info */
+
+/***** end product-sale *****/
+
+/***** view-all *****/
+.view-all {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.view-all button{
+    background-color: rgb(253, 92, 92);
+    padding: 20px 40px;
+    border-radius: 5px;
+    color: #fff;
+}
+/***** end view-all *****/
+
 

@@ -281,3 +281,36 @@ Cú pháp: order: number (số nguyên)
 các trang web: https://cdnjs.com/ đển link library (tìm đến library của font awesome và paste vào header), font awesome để lấy các kí tự icon. phải có library thi
 
 trang luyện tập flex: https://znews.vn/
+
+##
+
+- không set position thì mặc định sẽ là static
+
+- position: absolute: di chuyển linh hoạt, mặc định di chuyển theo body (lấy body làm cha)
+  thường sẽ sử dụng relative cho thẻ cha
+  ví dụ thẻ cha body có border vuông, các thẻ con là từng khối item có thể sử dụng absolute để nó chui vào trong khối thẻ cha và có thể di chuyển thoải mái ở trong khung(relative đã set)
+  lưu ý cách trình bày code: các thuộc tính liên quan đến position thì viết thành 1 cụm, các thuộc tính khác ghi thành 1 cụm khác ở dưới
+
+- position: fixed: khi kéo thanh cuộn thì nó vẫn ở nguyên vị trí
+  vị trí cố định theo viewport (góc nhìn người dùng trên trang web)
+  không ăn theo cha của thằng khác ngoài viewport
+
+- inset: bao gồm 4 giá trị top right bottom left
+  thường sử dụng trong trường hợp 4 cạnh bằng nhau
+
+2 position có cùng 1 loại thì sẽ sang so sánh thứ bậc ở html (đứng sau sẽ được ưu tiên trước)
+ví dụ: 2 item trên dưới, item 1 set position: relative top 30px, left 30px thì item 1 sẽ nằm đè ở chéo trên item
+
+- z-index: đẩy vị trí
+
+- overflow: có 4 thuộc tính: visible | hidden | scroll | auto
+
+overflow-x: Tùy chỉnh theo trục x
+overflow-y: Tùy chỉnh theo trục y
+
+- visibility: có 2 giá trị: visible | hidden
+
+- object-fit: cover | contain: fit ảnh tỉ lệ gốc, không làm méo ảnh khi đã set width và height
+  cover: fill kín ảnh (chỉ fill hết trong width đã xét)
+
+-object-position: chỉnh vị trí ảnh (mặc định sẽ tính từ trung tâm, có thể set là 50% 50%)
