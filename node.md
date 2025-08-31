@@ -313,4 +313,56 @@ overflow-y: Tùy chỉnh theo trục y
 - object-fit: cover | contain: fit ảnh tỉ lệ gốc, không làm méo ảnh khi đã set width và height
   cover: fill kín ảnh (chỉ fill hết trong width đã xét)
 
--object-position: chỉnh vị trí ảnh (mặc định sẽ tính từ trung tâm, có thể set là 50% 50%)
+- object-position: chỉnh vị trí ảnh (mặc định sẽ tính từ trung tâm, có thể set là 50% 50%)
+
+## transition:
+
+Lưu ý: chỉ tác dụng với các thuộc tính có giá trị là số
+
+màu giá trị cũng là số
+
+1. Thuộc tính transition-property
+
+- Chọn thuộc tính css để cho phép áp dụng transition (như kế thừa các thuộc tính)
+- Mỗi thuộc tính cách nhau bởi dấu ,
+- có thể chọn tất cả bằng cách dùng giá trị all
+
+Ví dụ:
+
+CSS:
+transition-property: width, color;
+
+2. Thuộc tính transition-duration
+
+- Chọn thời gian hoàn thành quá trình chuyển động
+- Đơn vị: s, ms (1000: ms)
+
+3. Thuộc tính transition-delay
+
+- Thời gian trễ trước khi chuyển động bắt đầu
+- Đơn vị: s, ms (1000: ms)
+
+4. Thuộc tính transition-timing-function
+
+- ease (Mặc định): Chuyển động chậm - nhanh -chậm
+- ease-in: Chuyển động chậm - nhanh
+- ease-out: Chuyển động nhanh - chậm
+- ease-in-out: Chuyển động chậm - nhanh - chậm (khác ease mặc định, khoảng cách chậm sẽ kết thúc nhanh hơn ease)
+- linear: Chuyển động đều
+- cubic-bezier(): Tự thiết lập
+
+lưu ý: ở ví dụ 3, opacity giúp giải quyết bài toán transition, vì sử dụng display none và display block để ẩn hiện 1 menu thì trasition sẽ không hoạt động
+
+5. Thuộc tính transition
+
+transition: property duration delay timing-function
+
+Nếu muốn khai báo nhiều thuộc tính:
+
+Css:
+transition-property: width, height;
+transition: 0.3s linear;
+
+chú ý sử dụng overflow: hidden để nó ẩn
+
+Tính tỉ lệ phần trăm

@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+    display: block;
+    margin: 30px auto;
+    border: 0;
+    background:green;
+    padding: 20px 50px;
+    color: #fff;
+    border-radius: 99px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 99;
+}
+input {
+    display: none;
+}
+button .switch-button {
+    padding: 10px 10px;
+    border: 1px solid red;
+    border-radius: 999px;
+    background-color: red;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    bottom: 10px;
+    transition:  0.3s;
+    z-index: 100;
+    
+}
+button label input:checked + .switch-button {
+    margin-left: 60px;
+    transition:  0.3s;
+}
+button label input:checked ~ .background {
+    position: absolute;
+    inset: 0;
+    background-color: blue;
+    transition: 0.3s;
+    opacity: 1;
+    visibility: visible;
+}
+.background {
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}

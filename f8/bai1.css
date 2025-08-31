@@ -1,127 +1,46 @@
 * {
-    padding: 0;
     margin: 0;
-    border: 0;
+    padding: 0;
+    box-sizing: border-box;
     outline: 0;
-    box-sizing: 0;
 }
-html {
-    font-size: 10px;
-}
-body {
-    font-size: 1.6rem;
-    background-color: #2e3e4d;
-}
-li {
-    list-style: none;
-    color: #fff;
-}
-a {
-    text-decoration: none;
-    color: #fff;
-}
-.header {
-    width: 80%;
+
+.input {
+    width: 1200px;
     margin: 0 auto;
-    padding-top: 30px;
+    text-align: center;
+    padding-top: 300px;
     position: relative;
 }
-.header .product-title{
-    display: flex;
-    justify-content: flex-start;
-    background-color: #1f4959;
-    border-radius: 8px;
+.input-name {
     position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    transition: border-color 0.3s;
 }
-.header .product-title .list-item{
-    display: flex;
-    justify-content: flex-start;
-    background-color: #1f4959;
-    border-radius: 8px;
-}
-.header .product-title .list-item .item{
-    padding: 10px 30px;
-}
-.header .product-title .list-item .item:hover{
-    background-color: rgb(255, 81, 0);
-    border-radius: 8px;
-}
-/* end product title */
-
-/* product-title-inner */
-
-/* level1 */
-.item {
-    position: relative;
-    display: flex;
-}
-
-.product-title-inner {
-    width: 120px;
-    display: none;
+.label-username {
     position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: rgb(0, 195, 255);
-    /* padding: 10px 10px 0px 10px; */
-    z-index: 1000;
+    top: 92%;
+    left: 43%;
+    background-color: white;
+    transition: top 0.3s;
 }
-.item:hover .product-title-inner {
-    display: block;
+.input-name:focus {
+    border-color: purple;
+    color: purple;
 }
-.level1 {
-    position: relative;
+.input-name:focus + .label-username  {
+    top: 86%;
+    color: purple;
 }
-.level1 ul li{
-    width: 50px;
-    display: flex;
-    padding: 10px 60px 10px 10px;
-}
-/* end level1 */
 
-/* level2 */
-.level2 , .level3 {
-    display: none;    
+.input-name:not(:placeholder-shown) + .label-username{
+    top: 86%;
+    color: purple;
+    border-color: purple;
 }
-.level1 .level2 li{
-    width: 60px;
-    padding: 10px 60px 10px 10px;
-    background-color: orange;
+.input-name:not(:focus):not(:placeholder-shown) {
+    color: purple;
+    border-color: purple;
 }
-.level1 ul li:hover > .level2{
-    display: block;
-    position: absolute;
-    left: 100%;
-    top: 25%;
-}
-/* end level2 */
-
-/* level 3 */
-.level2 {
-    position: relative;
-}
-.level1 .level2 .level3 li{
-    width: 70px;
-    padding: 10px 50px 10px 10px;
-    background-color: brown;
-}
-.level2 li:hover >.level3{
-    width: 100%;
-    display: block;
-    position: absolute;
-    left: 100%;
-    top: 33%;
-}
-/* end level3 */
-
-/* hr */
-.level1 ul hr{
-    border: 1px solid white;
-}
-.level1 .level2 hr{
-    border: 1px solid white;
-}
-.level1 .level2 .level3 hr{
-    border: 1px solid white;
-}
-/* end hr */

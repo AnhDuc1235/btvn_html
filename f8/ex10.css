@@ -1,0 +1,15 @@
+.box {
+    border: 1px solid red;
+}
+.box h1{
+    transition-property: padding-left;
+    transition-duration: 1s;
+    /* transition-delay: 1s; */
+    transition-timing-function: linear;
+
+}
+.box:hover h1{
+    padding-left: 150px;
+    /* padding-top: 100px; */
+    /* transition-delay: 1s; */
+}
