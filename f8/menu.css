@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+p,h3,span {
+    color: white;
+}
+.menu {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -250px;
+    background-color: black;
+    transition: left 0.3s;
+    z-index: 100;
+}
+#toggle-menu:checked ~ .menu{
+    position: absolute;
+    left: 0px;
+}
+.menu-heading {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.menu-heading span{
+    padding: 2px 10px;
+    background-color: orange;
+    border-radius: 100px;
+}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.216);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity , visibility;
+    z-index: 99;
+}
+#toggle-menu:checked ~ .overlay {
+    opacity: 1;
+    visibility: visible;
+
+}

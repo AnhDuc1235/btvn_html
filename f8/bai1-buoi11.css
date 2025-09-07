@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+li, a {
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+body {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+.product-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a img{
+    width: 40%;
+    height: auto;
+}
+
+
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.list ul {
+    display: flex;
+    gap: 30px;
+}
+.contact {
+    background-color: aqua;
+    padding: 10px 25px;
+    border-radius: 999px;
+    color: #fff;
+}
+.menu {
+    display: none;
+}
+@media screen and (max-width: 991px) {
+    .list ul {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .menu-inner {
+        width: 20%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -250px;
+        background-color: black;
+        transition: left 0.3s;
+        z-index: 100;   
+    }
+    #toggle-menu:checked ~ .menu-inner{
+        position: absolute;
+        left: 0px;
+    }
+    .overlay {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.216);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity , visibility;
+        z-index: 99;
+    }
+    #toggle-menu:checked ~ .overlay {
+        opacity: 1;
+        visibility: visible;
+
+    }
+    .menu ul li a{
+        color: #fff;
+        z-index: 100;
+    }
+    .menu-body ul {
+        /* display: flex;
+        flex-direction: column;
+        gap: 15px; */
+        display: block;
+        padding: 20% 20%;
+    }
+    .menu-body ul li a{
+        /* display: flex;
+        flex-direction: column;
+        gap: 15px; */
+        display: block;
+        padding: 7% 0;
+
+    }
+}
+@media screen and (max-width: 767px) {
+    .contact {
+        display: none;
+    }
+}

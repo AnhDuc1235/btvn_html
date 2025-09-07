@@ -366,3 +366,131 @@ transition: 0.3s linear;
 chú ý sử dụng overflow: hidden để nó ẩn
 
 Tính tỉ lệ phần trăm
+
+## Transform
+
+- Thay đổi hình dạng ban đầu của phần tử html
+- Tác dụng: Xoay, nghiêng, phóng to / thu nhỏ, dịch chuyển
+
+cú pháp: transforn: value
+
+1. Xoay
+
+-rotate(angle) --> Xoay phần tử theo trục Z
+-rotateX(angle) --> Xoay phần tử theo trục X
+-rotateY(angle) --> Xoay phần tử theo trục Y
+
+thuộc tính tách riêng: rotate: angle
+
+2. Nghiêng
+
+- skew(x,y) --> Nghiêng theo trục x và y
+- skewX(value) --> Nghiêng theo trục X
+- skewY(value) --> Nghiêng theo trục Y
+
+3. Phóng to / thu nhỏ
+
+- scale(x, y) --> Phóng to / thu nhỏ theo trục x, y (1 là phóng to, bé hơn 1 là thu nhỏ)
+- scaleX(value) --> Phóng to / thu nhỏ theo trục X
+- scaleY(value) --> Phóng to / thu nhỏ theo trục Y
+
+Thuộc tính tách riêng: scale: x y;
+
+transform: rotate(10deg) scale(1.3): vừa phóng to vừa xoay
+
+4. Dịch chuyển
+
+- Translate(x, y) --> Dịch chuyển theo trục x, y (Không thay đổi bố cục ban đầu)
+- TranslateX(value) --> Dịch chuyển theo trục X
+- TranslateY(value) --> Dịch chuyển theo trục Y
+
+Thuộc tính tách riêng: translate: x y
+
+Tại sao đoạn position:relative, top: 100px, left 100px lại không có transition
+Vì:
+position: relative không làm thay đổi bố cụ ban đầu, mặc định left right top bottom của nó sẽ là auto
+giá trị auto không có transition (không thể biết nó bắt đầu từ đâu)
+
+Đơn vị phần trăm trong translate: thì tỉ lệ theo kích thước của chính nó
+position: relative tỉ lệ theo kích thước của cha
+
+overflow: hidden chỉ được khi để nó ở thẻ cha ( chỉ hoạt động khi nó nhắm tới thẻ cha thì thẻ con mới hoạt động)
+
+## Responsive Web Design
+
+- Thiết kế web thích ứng
+- Đảm bảo giao diện tương thích với tất cả thiết bị
+- Nhận diện thiết bị Thông qua kích thước màn hình (chiều rộng)
+
+- Hình thức khác để tạo giao diện trên thiết bị khác: Adaptive
+
+1. breakpoint
+
+- Điểm tọa độ màn hình mà tại điểm đó giao diện sẽ bị thay đổi
+- Không có các breakpoint cố định cho mọi dự án, mà chỉ có breakpoint phổ biến
+- Các breakpoint phổ biến:
+
+* 1400px
+* 1200px
+* 992px -->
+* 768px -->
+* 576px
+
+2. Meta Viewport
+
+- Thẻ meta được thêm thẻ head để xác định tỷ lệ của các phiên bản màn hình
+
+3. Media Querties
+
+cú pháp bắt đầu là @ thì gọi là at rule
+
+- At-rule của CSS cho phép áp dụng các khối CSS với breakpoint chỉ định
+- Cú pháp:
+
+CSS:
+@media sreen and (max-width: breakpoint) {
+selector {
+thuoctinh: giatri;
+}
+}
+
+Ví dụ:
+
+CSS
+@media sreen and (min-width: 400px) and (max-width:800px) {
+body {
+color: red;
+}
+}
+
+Áp dụng các breakpoint vào media queries
+
+CSS
+@media screen and (max-width: 1399px) {
+Selector {
+thuoctinh: giatri;
+}
+}
+@media screen and (max-width: 1199px) {
+Selector {
+thuoctinh: giatri;
+}
+}
+@media screen and (max-width: 991px) {
+Selector {
+thuoctinh: giatri;
+}
+}
+@media screen and (max-width: 787px) {
+Selector {
+thuoctinh: giatri;
+}
+}
+@media screen and (max-width: 575px) {
+Selector {
+thuoctinh: giatri;
+}
+}
+
+(phải viết tuân thủ từ lớn đến bé)
+để tránh nhận diện không đúng breakpoint: chỉ trừ 0.02 (1200 thì là @media screen and (max-width: 1199.98px))
