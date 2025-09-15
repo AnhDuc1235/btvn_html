@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant | cart-page</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="cart-responsive.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="product-item">
+            <div class="items">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="menu">
+                    <input type="checkbox" id="toggle-menu" hidden>
+                    <button class="hambuger"><label for="toggle-menu"><img src="./img-cart/hamburger.png" alt=""></label></button>
+                    <nav class="menu-inner">
+                        <div class="menu-body">
+                            <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Menu</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Pages</a></li>
+                                    <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <label for="toggle-menu" class="overlay"></label>
+                </div>
+            </div>
+            <label for="toggle-menu" class="out"></label>
+            </div>
+            <div class="logo">
+                <a href="#">
+                    <img src="./img-cart/Vector.png" alt="">
+                </a>
+            </div>
+            <div class="nav-right">
+                <p>11:24 we're open</p>
+                <a href="#">Table Reservation</a>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="cart-view">
+            <div class="cart-view-inner">
+                <div class="cart-header">
+                    <span>
+                    </span>
+                    <div class="cart-header-list">
+                        <p>Food</p>
+                        <p>Price</p>
+                        <p>Quantity</p>
+                        <p>Subtotal</p>
+                    </div>
+                </div>
+                <hr>
+                <!-- cart1 -->
+                <div class="cart-item">
+                    <div class="delete">
+                        <img src="./img-cart/Delete.png" alt="">
+                    </div>
+                    <div class="item-image">
+                        <a href="#">
+                            <img src="./img-cart/cart1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="cart-detail">
+                    <div class="cart-name">
+                        <span class="cart-header-name">Food</span>
+                        <span class="value">Crispy chicken breasts</span>
+                    </div>
+                    <div class="info">
+                        <span class="cart-header-name">Price</span>
+                        <span class="value">$24.99</span>
+                    </div>
+                    <div class="add-to-card">
+                        <span class="cart-header-name">Quantity</span>
+                        <div class="quantity">
+                            <div class="minus"><span>-</span></div>
+                            <div class="number-product"><span>1</span></div>
+                            <div class="plus"><span>+</span></div>
+                        </div>
+                    </div>
+                    <div class="subtotal">
+                        <span class="cart-header-name">Subtotal</span>
+                        <span class="value">$24.99</span>
+                    </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- cart2 -->
+                <div class="cart-item">
+                    <div class="delete">
+                        <img src="./img-cart/Delete.png" alt="">
+                    </div>
+                    <div class="item-image">
+                        <a href="#">
+                            <img src="./img-cart/cart2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="cart-detail">
+                    <div class="cart-name">
+                        <span class="cart-header-name">Food</span>
+                        <span class="value">Spaghetti Napoletana</span>
+                    </div>
+                    <div class="info">
+                        <span class="cart-header-name">Price</span>
+                        <span class="value">$59.00</span>
+                    </div>
+                    <div class="add-to-card">
+                        <span class="cart-header-name">Quantity</span>
+                        <div class="quantity">
+                            <div class="minus"><span>-</span></div>
+                            <div class="number-product"><span>1</span></div>
+                            <div class="plus"><span>+</span></div>
+                        </div>
+                    </div>
+                    <div class="subtotal">
+                        <span class="cart-header-name">Subtotal</span>
+                        <span class="value">$59.00</span>
+                    </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="cart-action">
+                    <div class="coupon">
+                        <input type="text" placeholder="Coupon code">
+                        <button class="apply-coupon"><span>Apply coupon</span></button>
+                    </div>
+                    <button class="update-cart"><span>Update Cart</span></button>
+                </div>
+                
+            </div>
+        </section>
+        <section class="cart-total">
+            <div class="cart-total-inner">
+                <div class="left-empty"></div>
+                <div class="cart-total-list">
+                    <div class="cart-total-header">
+                        <h4>Cart totals</h4>
+                    </div>
+                    <div class="cart-total-info">
+                        <div class="subtotal">
+                            <div class="left">
+                                <p>Subtotal</p>
+                            </div>
+                            <p>$83.99</p>
+                        </div>
+                        <hr>
+                        <div class="shipping">
+                            <div class="left">
+                                <p>Shipping</p>
+                            </div>
+                            <div class="shipping-detail">
+                                <p>Flat rate: <span>$6.00</span></p>
+                                <p>Shipping to <span>New South Wales.</span></p>
+                                <div class="change-address">
+                                    <p>Change address</p>
+                                    <a href="#">
+                                        <img src="./img-cart/shipping.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="ddl1">
+                                    <p>Australia</p>
+                                    <a href="#">
+                                        <img src="./img-cart/Arrow - Down 2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="ddl2">
+                                    <p>New South Wales</p>
+                                    <a href="#">
+                                        <img src="./img-cart/Arrow - Down 2.png" alt="">
+                                    </a>
+                                </div>
+                                <p>Suburb</p>
+                                <p>Postcode</p>
+                                <button class="update"><span>Update</span></button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="total">
+                            <div class="left">
+                                <p>total</p>
+                            </div>
+                            <p>$89.99</p>
+                        </div>
+                    </div>
+                    <button class="proceed"><span>Proceed to Checkout</span></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="dowload-link">
+                <div class="footer-logo">
+                    <a href="#" class="footer-logo-img">
+                        <img src="./img-cart/Vector.png" alt="logo">
+                    </a>
+                    <a href="#" class="wowwraps-img">
+                        <img src="./img-cart/WowWraps.png" alt="">
+                    </a>
+                </div>
+                <div class="dowload-store">
+                    <div class="dowload-link-description">
+                        <p>Download the WowWraps app today.</p>
+                    </div>
+                    <div class="store-link">
+                        <a href="#" class="appstore-link">
+                            <img src="./img-cart/apple-store.png" alt="apple-store">
+                        </a>
+                        <a href="#" class="chplay-link">
+                            <img src="./img-cart/google-play.png" alt="chplay-store">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="usefull-link">
+                <div class="usefull-link-header">
+                    <p>Usefull Link</p>
+                </div>
+                <div class="usefull-description">
+                    <p>Home</p>
+                    <p>About Us</p>
+                    <p>Services</p>
+                    <p>Booking</p>
+                    <p>Menu</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-info-header">
+                    <p>Contact Info</p>
+                </div>
+                <div class="contact-info-description">
+                    <p class="address-info">Silk St, Barbican, London EC2Y 8DS, UK</p>
+                    <p class="email-example">info@example.com</p>
+                    <p>800-123-45-678</p>
+                </div>
+            </div>
+
+            <div class="follow-us">
+                <div class="follow-us-header">
+                    <p>Follow us</p>
+                </div>
+                <div class="follow-us-description">
+                    <p class="facebook">Facebook</p>
+                    <p class="insta">Instagram</p>
+                    <p class="linkedin">Linkedin</p>
+                    <p class="twitter">Twitter</p>
+                </div>
+            </div>
+            <div class="legal">
+                <div class="legal-header">
+                    <p>Legal</p>
+                </div>
+                <div class="legal-description">
+                    <p>Website by uihut.com</p>
+                    <p>©2022. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

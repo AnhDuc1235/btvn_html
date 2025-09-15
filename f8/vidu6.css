@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.graph {
+    width: 200px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 100px 0;
+    
+}
+.graph span {
+    width: 20px;
+    height: 30px;
+    color: red;
+    background-color: red;
+    border-radius: 5px;
+    animation-name: moving;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+/* @keyframes moving {
+    from {
+        height: 100%;
+    }
+    50% {
+        height: 50%;
+    }
+    to {
+        height: 100%;
+    }
+} */
+@keyframes moving {
+    50% {
+        height: 100px;
+    }
+}

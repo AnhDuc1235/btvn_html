@@ -1,0 +1,1264 @@
+@media screen and (max-width: 1399.98px) {
+
+/**** Header ****/
+/**** Product-item ****/
+
+/* item */
+.items {
+    width: 372px;
+    height: 26px;
+}
+.items ul{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+/* end item */
+
+/* logo */
+.logo a{
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    width: 53px;
+    height: 55px;
+}
+/* end logo */
+
+
+
+/*nav-right */
+.nav-right{
+    width: 372px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+/* end nav-right */
+
+/**** footer ****/
+.footer {
+    width: 100%;
+    margin-bottom: 60px;
+}
+.footer-inner {
+    width: 80%;
+    height: 244px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/* dowload-link  */
+.dowload-link {
+    display: flex;
+    flex-direction: column;
+    gap: 76px;
+    width: 261.66px;
+    height: 230px;
+}
+.footer-logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.dowload-store {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.dowload-link-description {
+    width: 211px;
+    height: 55px;
+}
+.store-link {
+    display: flex;
+    justify-content: space-between;
+}
+/* end dowload-link */
+
+/* usefull-link */
+.usefull-link {
+    width: 108px;
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.usefull-link-header p{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.usefull-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+/*end  usefull-link */
+
+/* contact-info */
+.contact-info {
+    width: 197px;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.contact-info-header p{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.contact-info-description .address-info{
+    width: 197px;
+    height: 52px;
+}
+.contact-info-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.email-example {
+    color: #FB8F2C;
+    opacity: 1;
+
+}
+/*end contact-info */
+
+/*follow-us */
+.follow-us {
+    width: 89px;
+    height: 202px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.follow-us-header p{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.follow-us-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+.follow-us-description p{
+    border-bottom: 1px solid #FFFFFFCC;
+    
+}
+.facebook{
+    width: 78px;
+    height: 26px;
+    
+}
+.insta{
+    width: 78px;
+    height: 26px;
+    
+}
+.linkedin{
+    width: 64px;
+    height: 26px;
+    
+}
+.twitter{
+    width: 52px;
+    height: 26px;
+    
+}
+/*end  follow-us*/
+
+/*legal */
+.legal {
+    width: 205px;
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.legal-header p{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.legal-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+/*end  legal */
+
+
+/**** end footer ****/
+
+}
+
+
+@media screen and (max-width: 1199.98px) {
+.menu, .overlay, .out {
+        display: none;
+    }
+.nav-right {
+    width: 372px;
+}
+/* main */
+.items-name {
+    height: 68px;
+}
+/*end main */
+
+/**** footer ****/
+.footer {
+    width: 100%;
+    margin-bottom: 60px;
+}
+.footer-inner {
+    width: 80%;
+    height: 244px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+/* dowload-link  */
+.dowload-link {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 220px;
+    height: 230px;
+}
+.footer-logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.dowload-store {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dowload-link-description p{
+    font-size: 1.5rem;
+}
+.dowload-link-description {
+    width: 211px;
+    height: 55px;
+}
+.store-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appstore-link img, .chplay-link img{
+    width: 100%;
+}
+/* end dowload-link */
+
+/* usefull-link */
+.usefull-link {
+    width: 108px;
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.usefull-link-header p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.usefull-description p{
+    font-size: 1.2rem;
+}
+.usefull-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/*end  usefull-link */
+
+/* contact-info */
+.contact-info {
+    width: 197px;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.contact-info-header p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.contact-info-description .address-info{
+    width: 197px;
+    height: 52px;
+    font-size: 1.2rem;
+}
+.contact-info-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-info-description p{
+    font-size: 1.2rem;
+}
+.email-example {
+    color: #FB8F2C;
+    opacity: 1;
+    font-size: 1.2rem;
+
+}
+/*end contact-info */
+
+/*follow-us */
+.follow-us {
+    width: 89px;
+    height: 202px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.follow-us-header p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.follow-us-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.follow-us-description p{
+    border-bottom: 1px solid #FFFFFFCC;
+    
+}
+.facebook{
+    width: 78px;
+    height: 26px;
+    font-size: 1.2rem;
+}
+.insta{
+    width: 78px;
+    height: 26px;
+    font-size: 1.2rem;
+    
+}
+.linkedin{
+    width: 64px;
+    height: 26px;
+    font-size: 1.2rem;
+    
+}
+.twitter{
+    width: 52px;
+    height: 26px;
+    font-size: 1.2rem;
+    
+}
+/*end  follow-us*/
+
+/*legal */
+.legal {
+    width: 170px;
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.legal-header p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.legal-description p{
+    font-size: 1.2rem;
+    
+}
+.legal-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+/*end  legal */
+
+
+/**** end footer ****/
+
+}
+
+
+@media screen and (max-width: 991.98px) {
+/* dang bi loi tran vien ben phai, phai xu ly tam thoi: */
+    html, body {
+    max-width: 100%;
+
+}
+/* end */
+
+.items {
+    width: 110px;
+}
+.nav-right {
+    width: 110px;
+}
+.nav-right a{
+    font-size: 1.3rem;
+}
+.nav-right p {
+    display: none;
+}
+/* thanh nav */
+.menu, .overlay {
+    display: block;
+}
+.hambuger label img, .hambuger{
+    background-color: #111114;
+    border-width: 0;
+}
+.items ul {
+    display: none;
+}
+
+.menu-inner {
+    width: 30vw;
+    height: 200vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    background-color: black;
+    transition: left 0.3s ease;
+    z-index: 100;
+}
+
+#toggle-menu:checked ~ .menu-inner {
+    left: 0;
+}
+
+/* overlay */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 99;
+}
+
+#toggle-menu:checked ~ .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* menu content */
+.menu-body ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20%;
+}
+
+.menu-body ul li a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* button */
+.menu-btn {
+    background: transparent;
+    border: 1px solid #000;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* end thanh nav */
+
+/**** main ****/
+/* .product-detail-img {
+    flex: 0 0 40%;
+}
+.product-detail-info {
+    flex: 0 0 60%;
+} */
+ .product-detail-img a img {
+    height: 400px;
+}
+/****end main ****/
+
+/**** footer ****/
+.footer {
+    width: 100%;
+    margin-bottom: 60px;
+}
+.footer-inner {
+    width: 80%;
+    height: 244px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+/* dowload-link  */
+.footer-logo-img img{
+    width: 49px;
+    height: 51px;
+}
+.wowwraps-img img{
+    width: 130px;
+    height: 24px;
+}
+.dowload-link {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    width: 190px;
+    height: 230px;
+}
+.footer-logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.dowload-store {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dowload-link-description p{
+    font-size: 1.3rem;
+}
+.dowload-link-description {
+    width: 190px;
+    height: 55px;
+}
+.store-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appstore-link img, .chplay-link img{
+    width: 100%;
+}
+/* end dowload-link */
+
+/* usefull-link */
+.usefull-link {
+    width: 108px;
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.usefull-link-header p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.usefull-description p{
+    font-size: 1.2rem;
+}
+.usefull-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/*end  usefull-link */
+
+/* contact-info */
+.contact-info {
+    width: 197px;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.contact-info-header p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.contact-info-description .address-info{
+    width: 197px;
+    height: 52px;
+    font-size: 1.2rem;
+}
+.contact-info-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-info-description p{
+    font-size: 1.2rem;
+}
+.email-example {
+    color: #FB8F2C;
+    opacity: 1;
+    font-size: 1.2rem;
+
+}
+/*end contact-info */
+
+/*follow-us */
+.follow-us {
+    width: 89px;
+    height: 202px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.follow-us-header p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.follow-us-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+.follow-us-description p{
+    border-bottom: 1px solid #FFFFFFCC;
+    
+}
+.facebook{
+    width: 78px;
+    height: 26px;
+    font-size: 1.2rem;
+}
+.insta{
+    width: 78px;
+    height: 26px;
+    font-size: 1.2rem;
+    
+}
+.linkedin{
+    width: 64px;
+    height: 26px;
+    font-size: 1.2rem;
+    
+}
+.twitter{
+    width: 52px;
+    height: 26px;
+    font-size: 1.2rem;
+    
+}
+/*end  follow-us*/
+
+/*legal */
+.legal {
+    width: 170px;
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.legal-header p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.legal-description p{
+    font-size: 1.2rem;
+    
+}
+.legal-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+/*end  legal */
+
+
+/**** end footer ****/
+
+}
+
+
+@media screen and (max-width: 767.98px) {
+/* dang bi loi tran vien ben phai, phai xu ly tam thoi: */
+    html, body {
+    width: 100%;
+}
+/* end */
+h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 50px;
+}
+.related-items-header a img{
+    width: 161px;
+    height: 23px;
+}
+.items {
+    width: 110px;
+}
+.nav-right {
+    width: 110px;
+}
+.nav-right a{
+    font-size: 1.3rem;
+}
+.nav-right p {
+    display: none;
+}
+/* thanh nav */
+.menu, .overlay {
+    display: block;
+}
+.hambuger label img, .hambuger{
+    background-color: #111114;
+    border-width: 0;
+}
+.items ul {
+    display: none;
+}
+
+.menu-inner {
+    width: 30vw;
+    height: 200vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    background-color: black;
+    transition: left 0.3s ease;
+    z-index: 100;
+}
+
+#toggle-menu:checked ~ .menu-inner {
+    left: 0;
+}
+
+/* overlay */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 99;
+}
+
+#toggle-menu:checked ~ .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* menu content */
+.menu-body ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20%;
+}
+
+.menu-body ul li a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* button */
+.menu-btn {
+    background: transparent;
+    border: 1px solid #000;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+/* end thanh nav */
+
+/**** Header ****/
+/**** Product-item ****/
+.product-item{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo */
+.logo a{
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    width: 53px;
+    height: 55px;
+}
+/* end logo */
+
+
+
+/*nav-right */
+.nav-right{
+    width: 110px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+/* end nav-right */
+/**** end header ****/
+
+/**** main ****/
+.related-menu-inner {
+    width: 90%;
+}
+.left-arrow, .right-arrow, .deco-left, .deco-right{
+    display: none;
+}
+.select-item {
+    display: flex;
+    gap: 20px;
+}
+.dots {
+    display: block;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    transition: padding 0.3s;
+}
+.related-items-left, .related-items-inner, .related-items-middle, .related-items-right {
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+
+/* dots chuyen padding */
+/* breakfast */
+#breakfast-1:checked ~ .select-item label[for="breakfast-1"] > .dots {
+    padding: 10px 20px;
+}
+#breakfast-2:checked ~ .select-item label[for="breakfast-2"] > .dots {
+    padding: 10px 20px;
+}
+#breakfast-3:checked ~ .select-item label[for="breakfast-3"] > .dots {
+    padding: 10px 20px;
+}
+
+/* lunch */
+#lunch-1:checked ~ .select-item label[for="lunch-1"] > .dots {
+    padding: 10px 20px;
+}
+#lunch-2:checked ~ .select-item label[for="lunch-2"] > .dots {
+    padding: 10px 20px;
+}
+#lunch-3:checked ~ .select-item label[for="lunch-3"] > .dots {
+    padding: 10px 20px;
+}
+
+/* dinner */
+#dinner-1:checked ~ .select-item label[for="dinner-1"] > .dots {
+    padding: 10px 20px;
+}
+#dinner-2:checked ~ .select-item label[for="dinner-2"] > .dots {
+    padding: 10px 20px;
+}
+#dinner-3:checked ~ .select-item label[for="dinner-3"] > .dots {
+    padding: 10px 20px;
+}
+
+/* starters */
+#starters-1:checked ~ .select-item label[for="starters-1"] > .dots {
+    padding: 10px 20px;
+}
+#starters-2:checked ~ .select-item label[for="starters-2"] > .dots {
+    padding: 10px 20px;
+}
+#starters-3:checked ~ .select-item label[for="starters-3"] > .dots {
+    padding: 10px 20px;
+}
+
+
+
+/* mac dinh la 1 da duoc chon */
+.related-items-inner .related-items-left { 
+    display: block; 
+}
+.related-items-inner .related-items-middle,
+.related-items-inner .related-items-right { 
+    display: none; 
+}
+
+
+
+
+/* breakfast-slide*/
+#breakfast-1:checked ~ .related-items-inner .related-items-left {
+    display: block;
+}
+#breakfast-1:checked ~ .related-items-inner .related-items-middle,
+#breakfast-1:checked ~ .related-items-inner .related-items-right {
+    display: none;
+}
+
+#breakfast-2:checked ~ .related-items-inner .related-items-middle {
+    display: block;
+}
+#breakfast-2:checked ~ .related-items-inner .related-items-left,
+#breakfast-2:checked ~ .related-items-inner .related-items-right {
+    display: none;
+}
+
+#breakfast-3:checked ~ .related-items-inner .related-items-right {
+    display: block;
+}
+#breakfast-3:checked ~ .related-items-inner .related-items-left,
+#breakfast-3:checked ~ .related-items-inner .related-items-middle {
+    display: none;
+}
+
+/* lunch-slide*/
+#lunch-1:checked ~ .related-items-inner .related-items-left {
+  display: block;
+}
+#lunch-1:checked ~ .related-items-inner .related-items-middle,
+#lunch-1:checked ~ .related-items-inner .related-items-right {
+  display: none;
+}
+
+#lunch-2:checked ~ .related-items-inner .related-items-middle {
+  display: block;
+}
+#lunch-2:checked ~ .related-items-inner .related-items-left,
+#lunch-2:checked ~ .related-items-inner .related-items-right {
+  display: none;
+}
+
+#lunch-3:checked ~ .related-items-inner .related-items-right {
+  display: block;
+}
+#lunch-3:checked ~ .related-items-inner .related-items-left,
+#lunch-3:checked ~ .related-items-inner .related-items-middle {
+  display: none;
+}
+
+/* dinner-slide*/
+#dinner-1:checked ~ .related-items-inner .related-items-left {
+  display: block;
+}
+#dinner-1:checked ~ .related-items-inner .related-items-middle,
+#dinner-1:checked ~ .related-items-inner .related-items-right {
+  display: none;
+}
+
+#dinner-2:checked ~ .related-items-inner .related-items-middle {
+  display: block;
+}
+#dinner-2:checked ~ .related-items-inner .related-items-left,
+#dinner-2:checked ~ .related-items-inner .related-items-right {
+  display: none;
+}
+
+#dinner-3:checked ~ .related-items-inner .related-items-right {
+  display: block;
+}
+#dinner-3:checked ~ .related-items-inner .related-items-left,
+#dinner-3:checked ~ .related-items-inner .related-items-middle {
+  display: none;
+}
+
+/* starters-slide*/
+#starters-1:checked ~ .related-items-inner .related-items-left {
+  display: block;
+}
+#starters-1:checked ~ .related-items-inner .related-items-middle,
+#starters-1:checked ~ .related-items-inner .related-items-right {
+  display: none;
+}
+
+#starters-2:checked ~ .related-items-inner .related-items-middle {
+  display: block;
+}
+#starters-2:checked ~ .related-items-inner .related-items-left,
+#starters-2:checked ~ .related-items-inner .related-items-right {
+  display: none;
+}
+
+#starters-3:checked ~ .related-items-inner .related-items-right {
+  display: block;
+}
+#starters-3:checked ~ .related-items-inner .related-items-left,
+#starters-3:checked ~ .related-items-inner .related-items-middle {
+  display: none;
+}
+
+.banner-inner {
+    width: 90%;
+}
+.banner-text {
+    width: 100%;
+}
+
+/**** end main ****/
+/**** footer ****/
+.footer {
+    width: 100%;
+    margin-bottom: 60px;
+}
+.footer-inner {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.dowload-link, .usefull-link, .follow-us, .contact-info, .legal {
+    width: 100%;
+    height: auto;
+}
+/* dowload-link  */
+.footer-logo-img img{
+    width: 46px;
+    height: 48px;
+}
+.wowwraps-img img{
+    width: 145px;
+    height: 29px;
+}
+.dowload-link {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.footer-logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    order: 1;
+    padding-bottom: 20px;
+}
+.dowload-store {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 680px;
+    z-index: 2;
+}
+.dowload-link-description p{
+    font-size: 1.3rem;
+}
+.dowload-link-description {
+    width: 190px;
+    height: 55px;
+}
+.store-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appstore-link img, .chplay-link img{
+    width: 100%;
+}
+/* end dowload-link */
+
+.footer-flex{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+/* usefull-link */
+.usefull-link {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    order: 2;
+}
+.usefull-link-header p{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.usefull-description p{
+    font-size: 1.6rem;
+    line-height: 26px;
+}
+.usefull-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/*end  usefull-link */
+
+/* contact-info */
+.contact-info {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    order: 3;
+}
+.contact-info-header p{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.contact-info-description .address-info{
+    width: 100%;
+    height: auto;
+    font-size: 1.6rem;
+}
+.contact-info-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-info-description p{
+    font-size: 1.6rem;
+    line-height: 26px;
+}
+.email-example {
+    color: #FB8F2C;
+    opacity: 1;
+    font-size: 1.6rem;
+    line-height: 26px;
+
+}
+/*end contact-info */
+
+/*follow-us */
+.follow-us {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    order: 4;
+}
+.follow-us-header p{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.follow-us-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.6rem;
+    line-height: 26px;
+}
+.follow-us-description p{
+    border-bottom: 1px solid #FFFFFFCC;
+    
+}
+.facebook{
+    width: 78px;
+    height: auto;
+    font-size: 1.6rem;
+    line-height: 26px;
+}
+.insta{
+    width: 77px;
+    height: auto;
+    font-size: 1.6rem;
+    line-height: 26px;
+    
+}
+.linkedin{
+    width: 64px;
+    height: auto;
+    font-size: 1.6rem;
+    line-height: 26px;
+    
+}
+.twitter{
+    width: 52px;
+    height: auto;
+    font-size: 1.6rem;
+    line-height: 26px;
+    
+}
+/*end  follow-us*/
+
+/*legal */
+.legal {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    order: 5;
+}
+.legal-header p{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.legal-description p{
+    font-size: 1.6rem;
+    line-height: 26px;
+    
+}
+.legal-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+/*end  legal */
+
+
+/**** end footer ****/
+
+}

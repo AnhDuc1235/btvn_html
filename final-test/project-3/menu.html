@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant | menu-page</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="menu-responsive.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="product-item">
+            <div class="items">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="menu">
+                    <input type="checkbox" id="toggle-menu" hidden>
+                    <button class="hambuger"><label for="toggle-menu"><img src="./img-menu/hamburger.png" alt=""></label></button>
+                    <nav class="menu-inner">
+                        <div class="menu-body">
+                            <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Menu</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Pages</a></li>
+                                    <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <label for="toggle-menu" class="overlay"></label>
+                </div>
+            </div>
+            <label for="toggle-menu" class="out"></label>
+            </div>
+            <div class="logo">
+                <a href="#">
+                    <img src="./img-menu/Vector.png" alt="">
+                </a>
+            </div>
+            <div class="nav-right">
+                <p>11:24 we're open</p>
+                <a href="#">Table Reservation</a>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <!-- breakfast -->
+        <section class="related-menu">
+            <div class="related-menu-inner">
+                <div class="related-items-header">
+                    <h2>Breakfast</h2>
+                    <a href="#">
+                        <img src="./img-menu/Group 93.png" alt="">
+                    </a>
+                </div>
+                
+                <!-- Radio -->
+                <input class="radio" type="radio" name="slider1" id="breakfast-1" checked>
+                <input class="radio" type="radio" name="slider1" id="breakfast-2">
+                <input class="radio" type="radio" name="slider1" id="breakfast-3">
+
+                <div class="related-items-inner">
+                    <article class="related-items-left">
+                        <a href="#">
+                            <img src="./img-menu/breakfast-left.png" alt="" class="left-img">
+                            <img src="./img-menu/arrow-left.png" alt="" class="left-arrow">
+                        </a>
+                        <div class="items-name">
+                            <p>Egg Frittata Muffins. PIN IT</p>
+                        </div>
+                        <div class="items-detail">
+                            <p>Fresh toasted sourdough bread with olive oil and pomegranate.</p>
+                        </div>
+                        <hr>
+                        <div class="order">
+                            <p class="order-now">Order Now</p>
+                            <p class="order-price">$24</p>
+                        </div>
+                    </article>
+                    <article class="related-items-middle">
+                        <a href="#"><img src="./img-menu/breakfast-mid.png" alt=""></a>
+                        <div class="items-name">
+                            <p>Breakfast Bars. PIN IT</p>
+                        </div>
+                        <div class="items-detail">
+                            <p>Fresh toasted sourdough bread with olive oil and pomegranate.</p>
+                        </div>
+                        <hr>
+                        <div class="order">
+                            <p class="order-now">Order Now</p>
+                            <p class="order-price">$29</p>
+                        </div>
+                    </article>
+                    <article class="related-items-right">
+                        <a href="#">
+                            <img src="./img-menu/breakfast-right.png" alt="" class="right-img">
+                            <img src="./img-menu/arrow-right.png" alt="" class="right-arrow">
+                        </a>
+                        <div class="items-name">
+                            <p>Breakfast Sandwiches</p>
+                        </div>
+                        <div class="items-detail">
+                            <p>Fresh toasted sourdough bread with olive oil and pomegranate.</p>
+                        </div>
+                        <hr>
+                        <div class="order">
+                            <p class="order-now">Order Now</p>
+                            <p class="order-price">$19</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- select-item -->
+                <div class="select-item">
+                    <label for="breakfast-1"><div class="dots"></div></label>
+                    <label for="breakfast-2"><div class="dots"></div></label>
+                    <label for="breakfast-3"><div class="dots"></div></label>
+                </div>
+
+                
+            </div>
+        </section>
+        <section class="banner">
+            <div class="banner-inner">
+                <div class="banner-text">
+                    <h2>Food Is Not Just Eating Energy</h2>
+                </div>
+                <p>It’s an experience.</p>
+                <button class="order-button"><span>Order Now</span></button>
+            </div>
+        </section>
+        <!-- lunch -->
+        <section class="related-menu">
+            <div class="related-menu-inner">
+                <img src="./img-menu/Vector (2).png" alt="" class="deco-left">
+                <img src="./img-menu/Vector (1).png" alt="" class="deco-right">
+                <div class="related-items-header">
+                    <h2>Lunch</h2>
+                    <a href="#">
+                        <img src="./img-menu/Group 93.png" alt="">
+                    </a>
+                </div>
+                
+                <!-- Radio -->
+                <input class="radio" type="radio" name="slider2" id="lunch-1" checked>
+                <input class="radio" type="radio" name="slider2" id="lunch-2">
+                <input class="radio" type="radio" name="slider2" id="lunch-3">
+
+                <div class="related-items-inner">
+                    <article class="related-items-left">
+                        <a href="#">
+                            <img src="./img-menu/lunch-left.png" alt="" class="left-img">
+                            <img src="./img-menu/arrow-left.png" alt="" class="left-arrow">
+                        </a>
+                        <div class="items-name">
+                            <p>Crispy Chicken Breasts</p>
+                        </div>
+                        <div class="items-detail">
+                            <p>Fresh toasted sourdough bread with olive oil and pomegranate.</p>
+                        </div>
+                        <hr>
+                        <div class="order">
+                            <p class="order-now">Order Now</p>
+                            <p class="order-price">$54</p>
+                        </div>
+                    </article>
+                    <article class="related-items-middle">
+                        <a href="#"><img src="./img-menu/lunch-mid.png" alt=""></a>
+                        <div class="items-name">
+                            <p>Schezwan Noodles</p>
+                        </div>
+                        <div class="items-detail">
+                            <p>Fresh toasted sourdough bread with olive oil and pomegranate.</p>
+                        </div>
+                        <hr>
+                        <div class="order">
+                            <p class="order-now">Order Now</p>
+                            <p class="order-price">$49</p>
+                        </div>
+                    </article>
+                    <article class="related-items-right">
+                        <a href="#">
+                            <img src="./img-menu/lunch-right.png" alt="" class="right-img">
+                            <img src="./img-menu/arrow-right.png" alt="" class="right-arrow">
+                        </a>
+                        <div class="items-name">
+                            <p>New Lubina Marinada</p>
+                        </div>
+                        <div class="items-detail">
+                            <p>Fresh toasted sourdough bread with olive oil and pomegranate.</p>
+                        </div>
+                        <hr>
+                        <div class="order">
+                            <p class="order-now">Order Now</p>
+                            <p class="order-price">$59</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- select-item -->
+                <div class="select-item">
+                    <label for="lunch-1"><div class="dots"></div></label>
+                    <label for="lunch-2"><div class="dots"></div></label>
+                    <label for="lunch-3"><div class="dots"></div></label>
+                </div>
+
+                
+            </div>
+        </section>
+        <!-- dinner -->
+        <section class="related-menu">
+            <div class="related-menu-inner">
+                <div class="related-items-header">
+                    <h2>Dinner</h2>
+                    <a href="#">
+                        <img src="./img-menu/Group 93.png" alt="">
+                    </a>
+                </div>
+                
+                <!-- Radio -->
+                <input class="radio" type="radio" name="slider3" id="dinner-1" checked>
+                <input class="radio" type="radio" name="slider3" id="dinner-2">
+                <input class="radio" type="radio" name="slider3" id="dinner-3">
+
+                <div class="related-items-inner">
+                    <article class="related-items-left">
+                        <a href="#">
+                            <img src="./img-menu/dinner-left.png" alt="" class="left-img">
+                            <img src="./img-menu/arrow-left.png" alt="" class="left-arrow">
+                        </a>
+                        <div class="items-name">
+                            <p>Crispy Chicken Breasts</p>
+                        </div>
+                        <div class="items-detail">
+                            <p>Fresh toasted sourdough bread with olive oil and pomegranate.</p>
+                        </div>
+                        <hr>
+                        <div class="order">
+                            <p class="order-now">Order Now</p>
+                            <p class="order-price">$54</p>
+                        </div>
+                    </article>
+                    <article class="related-items-middle">
+                        <a href="#"><img src="./img-menu/dinner-mid.png" alt=""></a>
+                        <div class="items-name">
+                            <p>Schezwan Noodles</p>
+                        </div>
+                        <div class="items-detail">
+                            <p>Fresh toasted sourdough bread with olive oil and pomegranate.</p>
+                        </div>
+                        <hr>
+                        <div class="order">
+                            <p class="order-now">Order Now</p>
+                            <p class="order-price">$49</p>
+                        </div>
+                    </article>
+                    <article class="related-items-right">
+                        <a href="#">
+                            <img src="./img-menu/dinner-right.png" alt="" class="right-img">
+                            <img src="./img-menu/arrow-right.png" alt="" class="right-arrow">
+                        </a>
+                        <div class="items-name">
+                            <p>New Lubina Marinada</p>
+                        </div>
+                        <div class="items-detail">
+                            <p>Fresh toasted sourdough bread with olive oil and pomegranate.</p>
+                        </div>
+                        <hr>
+                        <div class="order">
+                            <p class="order-now">Order Now</p>
+                            <p class="order-price">$59</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- select-item -->
+                <div class="select-item">
+                    <label for="dinner-1"><div class="dots"></div></label>
+                    <label for="dinner-2"><div class="dots"></div></label>
+                    <label for="dinner-3"><div class="dots"></div></label>
+                </div>
+
+                
+            </div>
+        </section>
+        <!-- starters -->
+        <section class="related-menu">
+            <div class="related-menu-inner">
+                <div class="related-items-header">
+                    <h2>Starters</h2>
+                    <a href="#">
+                        <img src="./img-menu/Group 93.png" alt="">
+                    </a>
+                </div>
+                
+                <!-- Radio -->
+                <input class="radio" type="radio" name="slider4" id="starters-1" checked>
+                <input class="radio" type="radio" name="slider4" id="starters-2">
+                <input class="radio" type="radio" name="slider4" id="starters-3">
+
+                <div class="related-items-inner">
+                    <article class="related-items-left">
+                        <a href="#">
+                            <img src="./img-menu/starters-left.png" alt="" class="left-img">
+                        </a>
+                        <div class="items-name">
+                            <p>Crispy Chicken Breasts</p>
+                        </div>
+                        <div class="items-detail">
+                            <p>Fresh toasted sourdough bread with olive oil and pomegranate.</p>
+                        </div>
+                        <hr>
+                        <div class="order">
+                            <p class="order-now">Order Now</p>
+                            <p class="order-price">$54</p>
+                        </div>
+                    </article>
+                    <article class="related-items-middle">
+                        <a href="#"><img src="./img-menu/starters-mid.png" alt=""></a>
+                        <div class="items-name">
+                            <p>Schezwan Noodles</p>
+                        </div>
+                        <div class="items-detail">
+                            <p>Fresh toasted sourdough bread with olive oil and pomegranate.</p>
+                        </div>
+                        <hr>
+                        <div class="order">
+                            <p class="order-now">Order Now</p>
+                            <p class="order-price">$49</p>
+                        </div>
+                    </article>
+                    <article class="related-items-right">
+                        <a href="#">
+                            <img src="./img-menu/starters-right.png" alt="" class="right-img">
+                        </a>
+                        <div class="items-name">
+                            <p>New Lubina Marinada</p>
+                        </div>
+                        <div class="items-detail">
+                            <p>Fresh toasted sourdough bread with olive oil and pomegranate.</p>
+                        </div>
+                        <hr>
+                        <div class="order">
+                            <p class="order-now">Order Now</p>
+                            <p class="order-price">$59</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- select-item -->
+                <div class="select-item">
+                    <label for="starters-1"><div class="dots"></div></label>
+                    <label for="starters-2"><div class="dots"></div></label>
+                    <label for="starters-3"><div class="dots"></div></label>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="dowload-link">
+                <div class="footer-logo">
+                    <a href="#" class="footer-logo-img">
+                        <img src="./img-menu/Vector.png" alt="logo">
+                    </a>
+                    <a href="#" class="wowwraps-img">
+                        <img src="./img-menu/WowWraps.png" alt="">
+                    </a>
+                </div>
+                <div class="dowload-store">
+                    <div class="dowload-link-description">
+                        <p>Download the WowWraps app today.</p>
+                    </div>
+                    <div class="store-link">
+                        <a href="#" class="appstore-link">
+                            <img src="./img-menu/apple-store.png" alt="apple-store">
+                        </a>
+                        <a href="#" class="chplay-link">
+                            <img src="./img-menu/google-play.png" alt="chplay-store">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="usefull-link">
+                <div class="usefull-link-header">
+                    <p>Usefull Link</p>
+                </div>
+                <div class="usefull-description">
+                    <p>Home</p>
+                    <p>About Us</p>
+                    <p>Services</p>
+                    <p>Booking</p>
+                    <p>Menu</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-info-header">
+                    <p>Contact Info</p>
+                </div>
+                <div class="contact-info-description">
+                    <p class="address-info">Silk St, Barbican, London EC2Y 8DS, UK</p>
+                    <p class="email-example">info@example.com</p>
+                    <p>800-123-45-678</p>
+                </div>
+            </div>
+
+            <div class="follow-us">
+                <div class="follow-us-header">
+                    <p>Follow us</p>
+                </div>
+                <div class="follow-us-description">
+                    <p class="facebook">Facebook</p>
+                    <p class="insta">Instagram</p>
+                    <p class="linkedin">Linkedin</p>
+                    <p class="twitter">Twitter</p>
+                </div>
+            </div>
+            <div class="legal">
+                <div class="legal-header">
+                    <p>Legal</p>
+                </div>
+                <div class="legal-description">
+                    <p>Website by uihut.com</p>
+                    <p>©2022. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

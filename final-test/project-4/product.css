@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.6rem;
+    height: auto;
+    background-color: #111114;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+}
+h2 {
+    color: #FFFFFF;
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 500;
+    font-size: 6.4rem;
+    line-height: 74px;
+}
+/* h3 {
+    color: #111114;
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 50px;
+} */
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 26px;
+}
+p {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 1.6rem;
+}
+.menu, .overlay, .out {
+        display: none;
+    }
+
+/**** Header ****/
+/**** Product-item ****/
+.header {
+    padding-top: 30px;
+    height: 200px;
+}
+.product-item{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* item */
+.items {
+    width: 372px;
+    height: 26px;
+}
+.items ul{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+/* end item */
+
+/* logo */
+.logo a{
+    width: 53px;
+    height: 55px;
+}
+/* end logo */
+
+
+
+/*nav-right */
+.nav-right{
+    width: 372px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+.nav-right a:hover{
+    border-bottom: 1px solid #FFFFFF;
+}  
+/* end nav-right */
+/****  end Product-item **** /
+/**** end Header ****/
+
+/**** main ****/
+/* product-detail */
+.product-detail {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+}
+.product-detail-inner{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.product-detail-img a img {
+    width: 90%;
+    height: 616px;
+}
+.product-detail-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 0 0 50%;
+}
+.product-detail-img {
+    flex: 0 0 50%;
+}
+.customer-review {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+.product-detail-price p{
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 2.4rem;
+    line-height: 34px;
+    font-weight: 500;
+    font-family: 'Libre Bodoni', serif;
+}
+.product-detail-des {
+    line-height: 26px;
+}
+.add-to-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 0;
+}
+.quantity {
+    display: flex;
+}
+.minus, .plus {
+    border: 1px solid #FFFFFF;
+    align-self: center;
+    justify-items: center;
+    padding: 10px 10px;
+}
+.minus span, .plus span, .number-product span {
+    color: #FFFFFF;
+    align-self: center;
+    justify-items: center;
+}
+.number-product {
+    border: 1px solid #FFFFFF;
+    padding: 10px 30px;
+}
+.add-button {
+    border-width: 0;
+    padding: 8.5px 20px;
+    background-color: #FB8F2C;
+}
+.add-button label {
+    font-size: 1.6rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.others {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sku p span, .category p span, .tags p span {
+    font-size: 1.6rem;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+/* end product-detail */
+    
+/* description */
+.description {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+}
+.description-inner{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+/* product-tab */
+.product-tab {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #333;
+  width: 100%;
+}
+.product-tab label {
+    padding: 10px 0;
+    cursor: pointer;
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-size: 1.8rem;
+    line-height: 28px;
+    font-weight: 800;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.product-tab input[type="radio"]:checked + label {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.product-tab input[type="radio"]:checked + label::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FB8F2C;
+}
+
+.product-decription {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* end description */
+
+/* related-menu */
+.related-menu {
+    width: 100%;
+    height: auto;
+    margin-bottom: 150px;
+}
+.related-menu-inner {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+.related-items-header p{
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    font-size: 2.4rem;
+    line-height: 34px;
+    font-weight: 500;
+    font-family: 'Libre Bodoni', serif;
+}
+.related-items-inner {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+
+}
+.related-items-left, .related-items-right, .related-items-middle {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+hr {
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px 0;
+}
+.related-items-left a img, .related-items-right a img, .related-items-middle a img{
+    width: 100%;
+    height: auto;
+}
+.items-name p{
+    color: #FFFFFF;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 2.4rem;
+    line-height: 34px;
+    font-weight: 500;
+}
+.order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order p:nth-child(1){
+    color: rgba(255, 255, 255, 1);
+}
+.order p:nth-child(1):hover{
+    border-bottom: 1px solid #FB8F2C;
+    padding-top: 5px;
+}
+.order p:nth-child(2){
+    color: rgba(255, 255, 255, 1);
+    font-size: 2.4rem;
+    line-height: 34px;
+    font-weight: 500;
+    font-family: 'Libre Bodoni', serif;
+}
+/*end related-menu */
+
+/**** end main ****/
+
+/**** footer ****/
+.footer {
+    width: 100%;
+    margin-bottom: 60px;
+}
+.footer-inner {
+    width: 80%;
+    height: 244px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/* dowload-link  */
+.dowload-link {
+    display: flex;
+    flex-direction: column;
+    gap: 76px;
+    width: 261.66px;
+    height: 230px;
+}
+.footer-logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.dowload-store {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.dowload-link-description {
+    width: 211px;
+    height: 55px;
+}
+.store-link {
+    display: flex;
+    justify-content: space-between;
+}
+/* end dowload-link */
+
+/* usefull-link */
+.usefull-link {
+    width: 108px;
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.usefull-link-header p{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.usefull-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+/*end  usefull-link */
+
+/* contact-info */
+.contact-info {
+    width: 197px;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.contact-info-header p{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.contact-info-description .address-info{
+    width: 197px;
+    height: 52px;
+}
+.contact-info-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.email-example {
+    color: #FB8F2C;
+    opacity: 1;
+
+}
+/*end contact-info */
+/*follow-us */
+.follow-us {
+    width: 89px;
+    height: 202px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.follow-us-header p{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.follow-us-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+.follow-us-description p{
+    border-bottom: 1px solid #FFFFFFCC;
+    
+}
+.facebook{
+    width: 78px;
+    height: 26px;
+    
+}
+.insta{
+    width: 78px;
+    height: 26px;
+    
+}
+.linkedin{
+    width: 64px;
+    height: 26px;
+    
+}
+.twitter{
+    width: 52px;
+    height: 26px;
+    
+}
+/*end  follow-us*/
+
+/*legal */
+.legal {
+    width: 205px;
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.legal-header p{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.legal-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+/*end  legal */
+
+
+/**** end footer ****/

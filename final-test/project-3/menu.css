@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.6rem;
+    height: auto;
+    background-color: #111114;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+}
+h2 {
+    color: #FFFFFF;
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 500;
+    font-size: 6.4rem;
+    line-height: 74px;
+}
+h4 {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 40px;
+}
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 26px;
+}
+p {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 1.6rem;
+}
+span {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 26px;
+}
+.menu, .overlay, .out {
+        display: none;
+    }
+
+/**** Header ****/
+/**** Product-item ****/
+.header {
+    padding-top: 30px;
+    height: auto;
+}
+.product-item{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* item */
+.items {
+    width: 372px;
+    height: 26px;
+}
+.items ul{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+/* end item */
+
+/* logo */
+.logo a{
+    width: 53px;
+    height: 55px;
+}
+/* end logo */
+
+
+
+/*nav-right */
+.nav-right{
+    width: 372px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+.nav-right a:hover{
+    border-bottom: 1px solid #FFFFFF;
+} 
+/* end nav-right */
+/****  end Product-item **** /
+/**** end Header ****/
+
+/**** main ****/
+/* related-menu */
+.dots, .radio {
+    display: none;
+}
+.related-items-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.related-menu {
+    width: 100%;
+    height: auto;
+    padding: 70px 0;
+}
+.related-menu-inner {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    z-index: 1;
+}
+.related-items-header p{
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    font-size: 2.4rem;
+    line-height: 34px;
+    font-weight: 500;
+    font-family: 'Libre Bodoni', serif;
+}
+.related-items-inner {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+
+}
+.related-items-left, .related-items-right, .related-items-middle {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+hr {
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px 0;
+}
+.related-items-left a .left-img, .related-items-right a .right-img, .related-items-middle a img{
+    width: 100%;
+    height: auto;
+}
+.items-name p{
+    color: #FFFFFF;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 2.4rem;
+    line-height: 34px;
+    font-weight: 500;
+}
+.order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order p:nth-child(1){
+    color: rgba(255, 255, 255, 1);
+}
+.order p:nth-child(1):hover{
+    border-bottom: 1px solid #FB8F2C;
+    padding-top: 5px;
+}
+.order p:nth-child(2){
+    color: rgba(255, 255, 255, 1);
+    font-size: 2.4rem;
+    line-height: 34px;
+    font-weight: 500;
+    font-family: 'Libre Bodoni', serif;
+}
+
+.related-items-left {
+    position: relative;
+}
+.left-arrow {
+    position: absolute;
+    left: -10%;
+    bottom: 320px;
+    z-index: 2;
+    background-color: #FFFFFF;
+    padding: 20px 15px;
+    border-radius: 50%;
+}
+.right-arrow {
+    position: absolute;
+    right: -3%;
+    bottom: 350px;
+    z-index: 2;
+    background-color: #FFFFFF;
+    padding: 20px 15px;
+    border-radius: 50%;
+}
+.deco-left {
+    width: 8%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+}
+.deco-right {
+    width: 8%;
+    position: absolute;
+    top: 90px;
+    right: -4%;
+}
+/*end related-menu */
+
+/* banner */
+.banner {
+    display: flex;
+    width: 100%;
+    height: 532px;
+    background-image: url(./img-menu/background.png);
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+}
+.banner-inner {
+    width: 70%;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(17, 17, 20, 0.507);
+}
+.banner-text {
+    width: 70%;
+}
+.banner-text p {
+    font-size: 2.4rem;
+    line-height: 38px;
+    font-weight: 500;
+}
+.order-button {
+    border-width: 0;
+    padding: 10px 15px;
+    background-color: rgba(251, 143, 44, 0.8);
+}
+.order-button span {
+    font-size: 1.6rem;
+    line-height: 26px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+}
+/* end banner */
+
+/**** end main ****/
+
+
+/**** footer ****/
+.footer {
+    width: 100%;
+    margin-bottom: 60px;
+}
+.footer-inner {
+    width: 80%;
+    height: 244px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/* dowload-link  */
+.dowload-link {
+    display: flex;
+    flex-direction: column;
+    gap: 76px;
+    width: 261.66px;
+    height: 230px;
+}
+.footer-logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.dowload-store {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.dowload-link-description {
+    width: 211px;
+    height: 55px;
+}
+.store-link {
+    display: flex;
+    justify-content: space-between;
+}
+/* end dowload-link */
+
+/* usefull-link */
+.usefull-link {
+    width: 108px;
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.usefull-link-header p{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.usefull-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+/*end  usefull-link */
+
+/* contact-info */
+.contact-info {
+    width: 197px;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.contact-info-header p{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.contact-info-description .address-info{
+    width: 197px;
+    height: 52px;
+}
+.contact-info-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.email-example {
+    color: #FB8F2C;
+    opacity: 1;
+
+}
+/*end contact-info */
+/*follow-us */
+.follow-us {
+    width: 89px;
+    height: 202px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.follow-us-header p{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.follow-us-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+.follow-us-description p{
+    border-bottom: 1px solid #FFFFFFCC;
+    
+}
+.facebook{
+    width: 78px;
+    height: 26px;
+    
+}
+.insta{
+    width: 78px;
+    height: 26px;
+    
+}
+.linkedin{
+    width: 64px;
+    height: 26px;
+    
+}
+.twitter{
+    width: 52px;
+    height: 26px;
+    
+}
+/*end  follow-us*/
+
+/*legal */
+.legal {
+    width: 205px;
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.legal-header p{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.legal-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+/*end  legal */
+
+
+/**** end footer ****/
