@@ -48,7 +48,9 @@ p {
 .menu, .overlay, .out {
         display: none;
     }
-
+li {
+    list-style: none;
+}
 /**** Header ****/
 /**** Product-item ****/
 .header {
