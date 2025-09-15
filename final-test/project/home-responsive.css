@@ -963,6 +963,13 @@ h4 {
     left: -5%;
     transform: translateY(10%);
 }
+.hero-title, .hero-description p{
+    width: 100%;
+    height: auto;
+}
+br {
+    display: none;
+}
 /* end hero */
 
 /* product 1 */

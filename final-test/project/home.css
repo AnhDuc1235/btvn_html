@@ -147,8 +147,11 @@ p {
     height: auto;
 }
 .hero-link a{
-    color: #FB8F2C;
+    color: #FFFFFF;
     padding-bottom: 5px;
+}
+.hero-link a:hover {
+    color: #FB8F2C;
     border-bottom: 1px solid #FB8F2C;
 }
 .hero-img {
