@@ -173,7 +173,7 @@ p {
     padding: 8.5px 20px;
     background-color: #FB8F2C;
 }
-.add-button label {
+.add-button a {
     font-size: 1.6rem;
     line-height: 26px;
     color: #FFFFFF;
