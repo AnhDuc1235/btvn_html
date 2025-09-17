@@ -13,6 +13,8 @@ orange: #FB8F2C */
 }
 html {
     font-size: 10px;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
 }
 body {
     font-size: 1.6rem;
@@ -20,6 +22,8 @@ body {
     background-color: #111114;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
 }
 h2 {
     color: #FFFFFF;
@@ -57,7 +61,7 @@ li {
 /**** Product-item ****/
 .header {
     padding-top: 30px;
-    height: 55px;
+    height: 100px;
 }
 .product-item{
     max-width: 80%;
@@ -66,6 +70,7 @@ li {
     justify-content: space-between;
     align-items: center;
 }
+
 /* item */
 .items {
     width: 372px;
@@ -89,18 +94,19 @@ li {
 
 /*nav-right */
 .nav-right{
-    width: 291px;
+    width: 372px;
     height: 27px;
+    justify-content: right;
     display: flex;
+    align-items: center;
     gap: 34px;
 }
 .nav-right a:hover{
     border-bottom: 1px solid #FFFFFF;
-}
+}  
 /* end nav-right */
 /****  end Product-item **** /
 /**** end Header ****/
-
 
 
 
@@ -131,6 +137,7 @@ li {
     color: #FFFFFF;
     font-family: 'Libre Bodoni', serif;
     font-weight: 700;
+    cursor: default;
 }
 .hero-description {
     width: 100%;
@@ -898,6 +905,7 @@ li {
     visibility: visible;
 }
 .left5-info{
+    background-color: rgba(128, 128, 128, 0.166);
     display: flex;
     gap: 10px;
     margin: 10px 0;
@@ -938,10 +946,12 @@ li {
 }
 .left5-link{
     color: #000000;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #FB8F2C;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
+}
+.left5-link:hover {
+    color: #FB8F2C;
+    border-bottom: 1px solid #FB8F2C;
 }
 /*end hover */
 
@@ -968,9 +978,9 @@ li {
     visibility: visible;
 }
 .middle5-info{
+    background-color: rgba(128, 128, 128, 0.166);
     display: flex;
     gap: 10px;
-    margin: 10px 0;
     width: 100%;
     height: auto;
     position: absolute;
@@ -1008,10 +1018,12 @@ li {
 }
 .middle5-link{
     color: #000000;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #FB8F2C;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
+}
+.middle5-link:hover {
+    color: #FB8F2C;
+    border-bottom: 1px solid #FB8F2C;
 }
 /*end hover */
 
@@ -1035,6 +1047,7 @@ li {
     visibility: visible;
 }
 .right5-info{
+    background-color: rgba(128, 128, 128, 0.166);
     display: flex;
     gap: 10px;
     margin: 10px 0;
@@ -1075,10 +1088,12 @@ li {
 }
 .right5-link{
     color: #000000;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #FB8F2C;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
+}
+.right5-link:hover {
+    color: #FB8F2C;
+    border-bottom: 1px solid #FB8F2C;
 }
 /*end hover */
 
@@ -1092,9 +1107,8 @@ li {
     color: #FFFFFF;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
-    margin: 0 5px;
 }
-.product5-link a:hover{
+.product5-link:hover{
     color: #FB8F2C;
     border-bottom: 1px solid #FB8F2C;
 }
@@ -1171,10 +1185,14 @@ li {
     border-radius: 6px;
 }
 .name, .phone-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     width: 85%;
     height: 15%;
     background-color: #e4832a;
+    align-self: center;
 }
 .comment {
     position: relative;
@@ -1182,30 +1200,37 @@ li {
     height: 35%;
     background-color: #e4832a;
 }
-.comment input {
-    width: 100%;
-    height: 35%;
-    padding: 15px 45px 15px 15px;
-    background-color: transparent;
-    border-width: 0;
-    color: #fff;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+textarea::placeholder {
+    color: #FFFFFF;
+
 }
-.name input, .phone-number input, .comment input {
+.name input, .phone-number input{
     width: 100%;
     height: 15%;
     padding: 15px 45px 15px 15px;
     background-color: transparent;
     border-width: 0;
-    color: #fff;
+    color: #FFFFFF;
     font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.comment textarea {
+    width: 100%;
+    height: auto;
+    padding: 15px 10px 15px 15px;
+    background-color: transparent;
+    border-width: 0;
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    resize: none;
 }
 .name a img, .phone-number a img {
     position: absolute;
     right: 15px;
     top: 30%;
-    width: 20px;
-    height: 20px;
+    width: 5%;
+    height: auto;
 }
 input::placeholder {
     color: #FFFFFF;
@@ -1225,7 +1250,8 @@ input::placeholder {
 }
 
 .book-button:hover {
-    background-color: #000;
+    color: rgb(178, 178, 178);
+    opacity: 1;
 }
 
 /* end product6 */
@@ -1267,7 +1293,7 @@ input::placeholder {
     height: 66px;
     background-color: #FFFFFF;
     border-width: 0;
-    padding: 20px 0 20px 20px;
+    padding: 20px 20px 20px 20px;
 }
 .signupform-button {
     align-items: center;
@@ -1367,12 +1393,14 @@ input::placeholder {
     font-weight: 500;
     text-transform: capitalize;
 }
-.product7-button a{
+.product7-button a {
+    color: #FFFFFF;
     width: 100%;
     height: auto;
-}
-.product7-button a{
     padding-bottom: 5px;
+}
+.product7-button a:hover {
+    color: #FB8F2C;
     border-bottom: 1px solid #FB8F2C;
 }
 .product7-link {
@@ -1386,9 +1414,8 @@ input::placeholder {
     color: #FFFFFF;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
-    margin: 0 5px;
 }
-.product7-link a:hover{
+.product7-link:hover{
     color: #FB8F2C;
     border-bottom: 1px solid #FB8F2C;
 }
@@ -1488,7 +1515,6 @@ input::placeholder {
 
 }
 /*end contact-info */
-
 /*follow-us */
 .follow-us {
     width: 89px;
@@ -1508,10 +1534,6 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    
-}
-.follow-us-description p{
-    border-bottom: 1px solid #FFFFFFCC;
     
 }
 .facebook{
@@ -1557,7 +1579,83 @@ input::placeholder {
     gap: 16px;
     
 }
+
 /*end  legal */
 
 
 /**** end footer ****/
+
+
+/**** tuong tac + sua loi ****/
+.home-header, .menu-header, .blog-header, .pages-header, .contact-header,
+.header-logo img, a, button, input, label{
+    user-select: none;  
+}
+.home-header:hover, .menu-header:hover, .blog-header:hover, .pages-header:hover, .contact-header:hover {
+    
+    color: #FB8F2C;
+    border-bottom: 1px solid #FB8F2C;
+}
+.header-logo:hover {
+    border-bottom: 0;
+}
+.table-resev-header {
+    user-select: none;  
+}
+.table-resev-header:hover {
+    color: #FFFFFF;
+}
+.img {
+    user-select: none;  
+}
+.star-review {
+    user-select: none;  
+}
+p, h2 {
+    cursor: default;
+}
+/* button */
+.add-button button{
+    background: transparent;
+    border: 0;
+}
+.add-button:hover, .add-button button{
+    color: #FFFFFF;
+    background-color: #FB8F2C;
+    opacity: 0.8;
+}
+
+
+/* footer */
+.usefull-link-header, .contact-info-header, .follow-us-header, .legal-header {
+    user-select: none;
+}
+.usefull-description p a {
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.usefull-description p a:hover {
+    border-bottom: 1px solid #FB8F2C;
+    color: #FB8F2C;
+}
+.contact-info-description a{
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.contact-info-description a:hover {
+    color: #FB8F2C;
+}
+
+.follow-us-description p a{
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.follow-us-description p a:hover{
+    color: #FB8F2C;
+    border-bottom: 1px solid #FB8F2C;
+}
+.contact-info-description a, .legal-description p {
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+/**** end tuong tac + sua loi****/

@@ -9,6 +9,8 @@
 }
 html {
     font-size: 10px;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
 }
 body {
     font-size: 1.6rem;
@@ -16,6 +18,8 @@ body {
     background-color: #111114;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
 }
 h2 {
     color: #FFFFFF;
@@ -90,6 +94,7 @@ li {
 .nav-right{
     width: 372px;
     height: 27px;
+    justify-content: right;
     display: flex;
     align-items: center;
     gap: 34px;
@@ -303,7 +308,7 @@ hr {
     width: 100%;
     height: auto;
 }
-.items-name p{
+.items-name a{
     color: #FFFFFF;
     font-family: 'Libre Bodoni', serif;
     font-size: 2.4rem;
@@ -313,7 +318,7 @@ hr {
 .order {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .order p:nth-child(1){
     color: rgba(255, 255, 255, 1);
@@ -447,10 +452,6 @@ hr {
     gap: 16px;
     
 }
-.follow-us-description p{
-    border-bottom: 1px solid #FFFFFFCC;
-    
-}
 .facebook{
     width: 78px;
     height: 26px;
@@ -494,7 +495,100 @@ hr {
     gap: 16px;
     
 }
+
 /*end  legal */
 
 
 /**** end footer ****/
+
+
+
+
+
+
+
+/**** tuong tac + sua loi ****/
+.home-header, .menu-header, .blog-header, .pages-header, .contact-header,
+.header-logo img, a, button, input, label{
+    user-select: none;  
+}
+.home-header:hover, .menu-header:hover, .blog-header:hover, .pages-header:hover, .contact-header:hover {
+    
+    color: #FB8F2C;
+    border-bottom: 1px solid #FB8F2C;
+}
+.header-logo:hover {
+    border-bottom: 0;
+}
+.table-resev-header {
+    user-select: none;  
+}
+.table-resev-header:hover {
+    color: #FFFFFF;
+}
+.img {
+    user-select: none;  
+}
+.star-review {
+    user-select: none;  
+}
+p, h2 {
+    cursor: default;
+}
+/* button */
+.add-button button{
+    background: transparent;
+    border: 0;
+}
+.add-button:hover, .add-button button{
+    color: #FFFFFF;
+    background-color: #FB8F2C;
+    opacity: 0.8;
+}
+
+/* quantity */
+.quantity {
+    user-select: none;  
+}
+.minus, .plus {
+    cursor: pointer;
+}
+
+/* related-items */
+.order-now:hover{
+    color: #FB8F2C;
+    border-bottom: 1px solid #FB8F2C;
+}
+.items-name a:hover {
+    color: #FB8F2C;
+}
+
+/* footer */
+.usefull-link-header, .contact-info-header, .follow-us-header, .legal-header {
+    user-select: none;
+}
+.usefull-description p a {
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.usefull-description p a:hover {
+    border-bottom: 1px solid #FB8F2C;
+    color: #FB8F2C;
+}
+.contact-info-description a{
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.contact-info-description a:hover {
+    color: #FB8F2C;
+}
+
+.follow-us-description p a{
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.follow-us-description p a:hover{
+    color: #FB8F2C;
+    border-bottom: 1px solid #FB8F2C;
+}
+/**** end tuong tac + sua loi****/

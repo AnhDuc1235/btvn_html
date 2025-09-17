@@ -13,6 +13,8 @@ orange: #FB8F2C */
 }
 html {
     font-size: 10px;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
 }
 body {
     font-size: 1.6rem;
@@ -20,6 +22,8 @@ body {
     background-color: #111114;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
 }
 h2 {
     color: #FFFFFF;
@@ -94,6 +98,8 @@ li {
     width: 291px;
     height: 27px;
     display: flex;
+    justify-content: right;
+    align-items: center;
     gap: 34px;
 }
 .nav-right a:hover{
@@ -169,8 +175,8 @@ li {
 }
 
 .play-button {
-    width: 80px;
-    height: 80px;
+    width: 18%;
+    height: 20%;
     background: #dcdcdc;
     border-radius: 50%;
     display: flex;
@@ -179,7 +185,7 @@ li {
     cursor: pointer;
     position: absolute;
     top: 40%;
-    left: 38%;
+    left: 41%;
     z-index: 2;
 }
 .triangle {
@@ -485,7 +491,7 @@ li {
     height: auto;
     background-color: #FFFFFF;
     border-width: 0;
-    padding: 20px 0 20px 20px;
+    padding: 20px 20px 20px 20px;
 }
 .signupform-button {
     align-items: center;
@@ -500,10 +506,14 @@ li {
     font-weight: 400;
     cursor: pointer;
 }
-.signupform-button span{
+.signupform-button span {
     text-align: center;
     width: 100%;
     height: auto;
+}
+.signupform-button span:hover, .signupform-button:hover {
+    background-color: #2a2a30;
+    opacity: 1;
 }
 /*end  signup-form */
 
@@ -602,7 +612,6 @@ li {
 
 }
 /*end contact-info */
-
 /*follow-us */
 .follow-us {
     width: 89px;
@@ -622,10 +631,6 @@ li {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    
-}
-.follow-us-description p{
-    border-bottom: 1px solid #FFFFFFCC;
     
 }
 .facebook{
@@ -673,108 +678,78 @@ li {
 }
 /*end  legal */
 
-/* product7 */
-.product7{
-    margin-top: 62px;
-}
-.product7-inner {
-    width: 80%;
-    height: 892px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.product7-text {
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 60px;
-    gap: 20px;
-}
-.product7-list {
-    width: 100%;
-    height: 496px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-
-}
-.left7 .product7-img img, .middle7 .product7-img img, .right7 .product7-img img{
-    width: 100%;
-    height: auto;
-}
-.post {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-.post-icon {
-    display: flex;
-    gap: 30px;
-}
-.eyes {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    width: 60px;
-    height: 26px;
-}
-.chat {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    width: 50px;
-    height: 26px;
-}
-.eyes img{
-    width: 20px;
-    height: 14px;
-}
-.chat img{
-    width: 20px;
-    height: 20px;
-}
-.post p, .eyes p, .chat p, .product7-info p, .product7-link{
-    opacity: 1;
-}
-
-.product7-info {
-    width: 370px;
-    height: 68px;
-    margin-bottom: 30px;
-}
-.product7-info p {
-    font-family: 'Libre Bodoni', serif;
-    font-size: 2.4rem;
-    line-height: 34px;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-.product7-button a{
-    width: 77px;
-    height: 32px;
-}
-.product7-button a{
-    padding-bottom: 5px;
-    border-bottom: 1px solid #FB8F2C;
-}
-.product7-link {
-    padding-top: 30px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #FB8F2C;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 400;
-    margin: 40px 0 0 0;
-}
-.product7-link a{
-    color: #FB8F2C;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 400;
-    margin: 0 5px;
-}
-/* end product7 */
 /**** end footer ****/
+
+/**** tuong tac + sua loi ****/
+.home-header, .menu-header, .blog-header, .pages-header, .contact-header,
+.header-logo img, a, button, input, label{
+    user-select: none;  
+}
+.home-header:hover, .menu-header:hover, .blog-header:hover, .pages-header:hover, .contact-header:hover {
+    
+    color: #FB8F2C;
+    border-bottom: 1px solid #FB8F2C;
+}
+.header-logo:hover {
+    border-bottom: 0;
+}
+.table-resev-header {
+    user-select: none;  
+}
+.table-resev-header:hover {
+    color: #FFFFFF;
+}
+.img {
+    user-select: none;  
+}
+.star-review {
+    user-select: none;  
+}
+p, h2 {
+    cursor: default;
+}
+/* button */
+.add-button button{
+    background: transparent;
+    border: 0;
+}
+.add-button:hover, .add-button button{
+    color: #FFFFFF;
+    background-color: #FB8F2C;
+    opacity: 0.8;
+}
+
+
+/* footer */
+.usefull-link-header, .contact-info-header, .follow-us-header, .legal-header {
+    user-select: none;
+}
+.usefull-description p a {
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.usefull-description p a:hover {
+    border-bottom: 1px solid #FB8F2C;
+    color: #FB8F2C;
+}
+.contact-info-description a{
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.contact-info-description a:hover {
+    color: #FB8F2C;
+}
+
+.follow-us-description p a{
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.follow-us-description p a:hover{
+    color: #FB8F2C;
+    border-bottom: 1px solid #FB8F2C;
+}
+.contact-info-description a, .legal-description p {
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+/**** end tuong tac + sua loi****/

@@ -152,10 +152,6 @@
     gap: 16px;
     
 }
-.follow-us-description p{
-    border-bottom: 1px solid #FFFFFFCC;
-    
-}
 .facebook{
     width: 78px;
     height: 26px;
@@ -347,10 +343,6 @@
     gap: 10px;
     
 }
-.follow-us-description p{
-    border-bottom: 1px solid #FFFFFFCC;
-    
-}
 .facebook{
     width: 78px;
     height: 26px;
@@ -382,7 +374,7 @@
     height: 118px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 24px;
 }
 .legal-header p{
     font-weight: 500;
@@ -608,6 +600,7 @@
     line-height: 26px;
     color: #FFFFFF;
     opacity: 1;
+    height: 52px;
 }
 
 .contact-info-description .address-info{
@@ -645,16 +638,13 @@
     line-height: 26px;
     color: #FFFFFF;
     opacity: 1;
+    height: 52px;
 }
 .follow-us-description {
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-size: 1.2rem;
-}
-.follow-us-description p{
-    border-bottom: 1px solid #FFFFFFCC;
-    
 }
 .facebook{
     width: 78px;
@@ -687,7 +677,7 @@
     height: 118px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 24px;
 }
 .legal-header p{
     font-weight: 500;
@@ -695,6 +685,7 @@
     line-height: 26px;
     color: #FFFFFF;
     opacity: 1;
+    height: 52px;
 }
 .legal-description p{
     font-size: 1.2rem;
@@ -1017,6 +1008,7 @@ p {
     line-height: 26px;
     color: #FFFFFF;
     opacity: 1;
+    height: auto;
 }
 
 .contact-info-description .address-info{
@@ -1057,6 +1049,7 @@ p {
     line-height: 26px;
     color: #FFFFFF;
     opacity: 1;
+    height: auto;
 }
 .follow-us-description {
     display: flex;
@@ -1064,10 +1057,6 @@ p {
     gap: 10px;
     font-size: 1.6rem;
     line-height: 26px;
-}
-.follow-us-description p{
-    border-bottom: 1px solid #FFFFFFCC;
-    
 }
 .facebook{
     width: 78px;
@@ -1113,6 +1102,7 @@ p {
     line-height: 26px;
     color: #FFFFFF;
     opacity: 1;
+    height: auto;
 }
 .legal-description p{
     font-size: 1.6rem;

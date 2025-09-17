@@ -6,6 +6,7 @@
     <title>Restaurant | Home-page </title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="home-responsive.css">
+    <link rel="icon" href="../project/favicon/favicon.PNG" type="image/png">
 
 </head>
 <body>
@@ -13,11 +14,11 @@
         <nav class="product-item">
             <div class="items">
                 <ul>
-                    <li><a href="../project/home.html">Home</a></li>
-                    <li><a href="../project-3/menu.html">Menu</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a class="home-header" href="../project/home.html">Home</a></li>
+                    <li><a class="menu-header" href="../project-3/menu.html">Menu</a></li>
+                    <li><a class="blog-header" href="#">Blog</a></li>
+                    <li><a class="pages-header" href="#">Pages</a></li>
+                    <li><a class="contact-header" href="#">Contact</a></li>
                 </ul>
                 <div class="menu">
                     <input type="checkbox" id="toggle-menu" hidden>
@@ -25,11 +26,11 @@
                     <nav class="menu-inner">
                         <div class="menu-body">
                             <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Menu</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Pages</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a class="home-header" href="../project/home.html">Home</a></li>
+                                    <li><a class="menu-header" href="../project-3/menu.html">Menu</a></li>
+                                    <li><a class="blog-header" href="#">Blog</a></li>
+                                    <li><a class="pages-header" href="#">Pages</a></li>
+                                    <li><a class="contact-header" href="#">Contact</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -39,16 +40,15 @@
             <label for="toggle-menu" class="out"></label>
             </div>
             <div class="logo">
-                <a href="#">
+                <a href="../project/home.html"class="header-logo">
                     <img src="./img-home/Vector.png" alt="">
                 </a>
             </div>
             <div class="nav-right">
                 <p>11:24 we're open</p>
-                <a href="#">Table Reservation</a>
+                <a href="#" class= "table-resev-header">Table Reservation</a>
             </div>
         </nav>
-        
     </header>
     <main class="main">
         <section class="hero-section">
@@ -58,7 +58,7 @@
                     <p>Italian food makes people think of big family dinners. So you may want to position your restaurant as a place to bring the whole family.</p>
                 </div>
                 <div class="hero-link">
-                    <a href="#">
+                    <a href="../project-4/product.html">
                         Taste Coffee
                     </a>
                 </div>
@@ -254,28 +254,28 @@
                 <input class="radio" type="radio" name="products" id="right-products">
                 <div class="product5-list">
                     <article class="left5">
-                        <a href="#">
+                        <a href="../project-4/product.html">
                             <img src="./img-home/ethiopia.png" alt="">
                         </a>
                         <div class="left5-info">
-                            <a href="#" class="left5-name">Ethiopia Organie Mix</a>
+                            <a href="../project-4/product.html" class="left5-name">Ethiopia Organie Mix</a>
                             <div class="left5-others">
                                 <a href="#" class="price">$49</a>
-                                <a href="#" class="left5-link">
+                                <a href="../project-4/product.html" class="left5-link">
                                     Order Now
                                 </a>
                             </div>
                         </div>
                     </article>
                     <article class="middle5">
-                        <a href="#">
+                        <a href="../project-4/product.html">
                             <img src="./img-home/columbia.png" alt="">
                         </a>
                         <div class="middle5-info">
-                            <a href="#" class="middle5-name">Columbia</a>
+                            <a href="../project-4/product.html" class="middle5-name">Columbia</a>
                             <div class="middle5-others">
                                 <a href="#" class="price">$34</a>
-                                <a href="#" class="middle5-link">
+                                <a href="../project-4/product.html" class="middle5-link">
                                     Order Now
                                 </a>
                             </div>
@@ -283,14 +283,14 @@
                         </div>
                     </article>
                     <article class="right5">
-                        <a href="#">
+                        <a href="../project-4/product.html">
                             <img src="./img-home/nicaragua.png" alt="">
                         </a>
                         <div class="right5-info">
-                            <a href="#" class="right5-name">Nicaragua</a>
+                            <a href="../project-4/product.html" class="right5-name">Nicaragua</a>
                             <div class="right5-others">
                                 <a href="#" class="price">$40</a>
-                                <a href="#" class="right5-link">
+                                <a href="../project-4/product.html" class="right5-link">
                                     Order Now
                                 </a>
                             </div>
@@ -338,7 +338,7 @@
                                     </a>
                                 </div>
                                 <div class="comment">
-                                    <input type="text" placeholder="Comment">
+                                    <textarea name="comment" placeholder="Comment"></textarea>
                                 </div>
                                 <button type="submit" class="book-button">Book now</button>
                             </form>
@@ -524,10 +524,10 @@
         <div class="footer-inner">
             <div class="dowload-link">
                 <div class="footer-logo">
-                    <a href="#" class="footer-logo-img">
+                    <a href="../project/home.html" class="footer-logo-img">
                         <img src="./img-home/Vector.png" alt="logo">
                     </a>
-                    <a href="#" class="wowwraps-img">
+                    <a href="../project/home.html" class="wowwraps-img">
                         <img src="./img-home/WowWraps.png" alt="">
                     </a>
                 </div>
@@ -562,9 +562,9 @@
                     <p>Contact Info</p>
                 </div>
                 <div class="contact-info-description">
-                    <p class="address-info">Silk St, Barbican, London EC2Y 8DS, UK</p>
-                    <p class="email-example">info@example.com</p>
-                    <p>800-123-45-678</p>
+                    <a href="https://www.google.com/maps/place/quan+hoang+mai/data=!4m2!3m1!1s0x3135ac398657c2ad:0xe0a5e23eaaed780?sa=X&ved=1t:242&ictx=111" class="address-info">Silk St, Barbican, London EC2Y 8DS, UK</a>
+                    <a href="mailto:info@example.com" class="email-example">info@example.com</a>
+                    <a href="tel:800-123-45-678">800-123-45-678</a>
                 </div>
             </div>
 
@@ -573,10 +573,10 @@
                     <p>Follow us</p>
                 </div>
                 <div class="follow-us-description">
-                    <p class="facebook">Facebook</p>
-                    <p class="insta">Instagram</p>
-                    <p class="linkedin">Linkedin</p>
-                    <p class="twitter">Twitter</p>
+                    <p class="facebook"><a href="https://web.facebook.com">Facebook</a></p>
+                    <p class="insta"><a href="http://instagram.com/">Instagram</a></p>
+                    <p class="linkedin"><a href="https://www.linkedin.com/">Linkedin</a></p>
+                    <p class="twitter"><a href="https://x.com/">Twitter</a></p>
                 </div>
             </div>
             <div class="legal">

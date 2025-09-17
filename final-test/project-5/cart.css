@@ -9,6 +9,8 @@
 }
 html {
     font-size: 10px;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
 }
 body {
     font-size: 1.6rem;
@@ -16,6 +18,8 @@ body {
     background-color: #111114;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
 }
 h2 {
     color: #FFFFFF;
@@ -98,6 +102,7 @@ li {
 .nav-right{
     width: 372px;
     height: 27px;
+    justify-content: right;
     display: flex;
     align-items: center;
     gap: 34px;
@@ -250,6 +255,9 @@ input::placeholder{
     border-width: 0;
     background-color: rgba(251, 143, 44, 1);
 }
+.coupon input{
+    color: #FFFFFF;
+}
 .apply-coupon span, .update-cart span{
     color: rgba(255, 255, 255, 1);
     font-size: 1.2rem;
@@ -258,7 +266,7 @@ input::placeholder{
 .update-cart {
     padding: 10px 20px;
     border-width: 0;
-    background-color: rgba(251, 143, 44, 0.8);
+    background-color: rgba(251, 143, 44, 1);
 }
 /* end cart-action */
 
@@ -324,12 +332,15 @@ input::placeholder{
 }
 .shipping-detail {
     flex: 0 0 50%;
+    margin-right: 20px;
     text-align: left;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-
+.subtotal p, .total p {
+    margin-right: 20px;
+}
 .change-address{
     display: flex;
     gap: 10px;
@@ -352,7 +363,15 @@ input::placeholder{
     display: flex;
     align-items: center;
 }
-
+.suburb, .postcode{
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    opacity: 0.8;
+    background-color: transparent;
+    padding-bottom: 7px;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+}
 .update {
     width: 50%;
     margin-top: 20px;
@@ -512,10 +531,7 @@ hr {
     gap: 16px;
     
 }
-.follow-us-description p{
-    border-bottom: 1px solid #FFFFFFCC;
-    
-}
+
 .facebook{
     width: 78px;
     height: 26px;
@@ -563,3 +579,105 @@ hr {
 
 
 /**** end footer ****/
+
+/**** end hieu ung + sua bug ****/
+.home-header, .menu-header, .blog-header, .pages-header, .contact-header,
+.header-logo img, a, button, input, label{
+    user-select: none;  
+}
+.home-header:hover, .menu-header:hover, .blog-header:hover, .pages-header:hover, .contact-header:hover {
+    
+    color: #FB8F2C;
+    border-bottom: 1px solid #FB8F2C;
+}
+.header-logo:hover {
+    border-bottom: 0;
+}
+.table-resev-header {
+    user-select: none;  
+}
+.table-resev-header:hover {
+    border-bottom: 1px solid #FFFFFF;
+}
+.img {
+    user-select: none;  
+}
+.star-review {
+    user-select: none;  
+}
+p, h2, h4 {
+    cursor: default;
+}
+/* button */
+.add-button button{
+    background: transparent;
+    border: 0;
+}
+.add-button:hover, .add-button button{
+    color: #FFFFFF;
+    background-color: #FB8F2C;
+    opacity: 0.8;
+}
+
+/* quantity */
+.quantity {
+    user-select: none;  
+}
+.minus, .plus {
+    cursor: pointer;
+}
+
+/* delete */
+.delete img {
+    user-select: none;
+    cursor: pointer;
+}
+.cart-name .value {
+    cursor: pointer;
+    user-select: none;
+}
+
+/* cart-action */
+.apply-coupon:hover, .update-cart:hover {
+    cursor: pointer;
+    background-color: #FB8F2C;
+    opacity: 0.8;
+}
+
+/* cart-total */
+.ddl1, .ddl1 p, .ddl2, .ddl2 p {
+    cursor: pointer;
+}
+.ddl1 a, .ddl2 a {
+    opacity: 0.8;
+}
+/* footer */
+.usefull-link-header, .contact-info-header, .follow-us-header, .legal-header {
+    user-select: none;
+}
+.usefull-description p a {
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.usefull-description p a:hover {
+    border-bottom: 1px solid #FB8F2C;
+    color: #FB8F2C;
+}
+.contact-info-description a{
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.contact-info-description a:hover {
+    color: #FB8F2C;
+}
+
+.follow-us-description p a{
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.follow-us-description p a:hover{
+    color: #FB8F2C;
+    border-bottom: 1px solid #FB8F2C;
+}
+/* end footer */
+/**** end hieu ung + sua bug ****/

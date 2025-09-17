@@ -9,6 +9,8 @@
 }
 html {
     font-size: 10px;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
 }
 body {
     font-size: 1.6rem;
@@ -16,6 +18,8 @@ body {
     background-color: #111114;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
 }
 h2 {
     color: #FFFFFF;
@@ -96,14 +100,12 @@ li {
 /*nav-right */
 .nav-right{
     width: 372px;
-    height: 27px;
+    height: 26px;
+    justify-content: right;
     display: flex;
     align-items: center;
     gap: 34px;
 }
-.nav-right a:hover{
-    border-bottom: 1px solid #FFFFFF;
-} 
 /* end nav-right */
 /****  end Product-item **** /
 /**** end Header ****/
@@ -206,19 +208,26 @@ hr {
 .related-items-left {
     position: relative;
 }
+.items-left-img, .items-right-img {
+    position: relative;
+}
 .left-arrow {
+    width: 20%;
+    height: auto;
     position: absolute;
     left: -10%;
-    bottom: 320px;
+    bottom: 40%;
     z-index: 2;
     background-color: #FFFFFF;
     padding: 20px 15px;
     border-radius: 50%;
 }
 .right-arrow {
+    width: 20%;
+    height: auto;
     position: absolute;
-    right: -3%;
-    bottom: 350px;
+    right: -10%;
+    bottom: 40%;
     z-index: 2;
     background-color: #FFFFFF;
     padding: 20px 15px;
@@ -272,13 +281,20 @@ hr {
 .order-button {
     border-width: 0;
     padding: 10px 15px;
+    background-color: rgba(251, 143, 44, 1);
+}
+.order-button:hover {
     background-color: rgba(251, 143, 44, 0.8);
 }
-.order-button span {
+.order-button button {
+    color: #FFFFFF;
     font-size: 1.6rem;
     line-height: 26px;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 600;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 /* end banner */
 
@@ -399,10 +415,7 @@ hr {
     gap: 16px;
     
 }
-.follow-us-description p{
-    border-bottom: 1px solid #FFFFFFCC;
-    
-}
+
 .facebook{
     width: 78px;
     height: 26px;
@@ -450,3 +463,89 @@ hr {
 
 
 /**** end footer ****/
+
+/**** tuong tac + sua loi ****/
+.home-header, .menu-header, .blog-header, .pages-header, .contact-header,
+.header-logo img, a, button, input, label{
+    user-select: none;  
+}
+.home-header:hover, .menu-header:hover, .blog-header:hover, .pages-header:hover, .contact-header:hover {
+    
+    color: #FB8F2C;
+    border-bottom: 1px solid #FB8F2C;
+}
+.header-logo:hover {
+    border-bottom: 0;
+}
+.table-resev-header {
+    user-select: none;  
+}
+.table-resev-header:hover {
+    border-bottom: 1px solid #FFFFFF;
+}
+.img {
+    user-select: none;  
+}
+.star-review {
+    user-select: none;  
+}
+p, h2 {
+    cursor: default;
+}
+/* button */
+.add-button button{
+    background: transparent;
+    border: 0;
+}
+.add-button:hover, .add-button button{
+    color: #FFFFFF;
+    background-color: #FB8F2C;
+    opacity: 0.8;
+}
+
+/* quantity */
+.quantity {
+    user-select: none;  
+}
+.minus, .plus {
+    cursor: pointer;
+}
+
+/* related-items */
+.order-now:hover{
+    color: #FB8F2C;
+    border-bottom: 1px solid #FB8F2C;
+}
+.items-name a:hover {
+    color: #FB8F2C;
+}
+
+/* footer */
+.usefull-link-header, .contact-info-header, .follow-us-header, .legal-header {
+    user-select: none;
+}
+.usefull-description p a {
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.usefull-description p a:hover {
+    border-bottom: 1px solid #FB8F2C;
+    color: #FB8F2C;
+}
+.contact-info-description a{
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.contact-info-description a:hover {
+    color: #FB8F2C;
+}
+
+.follow-us-description p a{
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.follow-us-description p a:hover{
+    color: #FB8F2C;
+    border-bottom: 1px solid #FB8F2C;
+}
+/**** end tuong tac + sua loi****/
