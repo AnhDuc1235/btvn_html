@@ -159,6 +159,7 @@ li {
 }
 .quantity {
     display: flex;
+    width: 100px;
 }
 .minus, .plus {
     border: 1px solid #FFFFFF;
@@ -173,7 +174,19 @@ li {
 }
 .number-product {
     border: 1px solid #FFFFFF;
-    padding: 10px 30px;
+    padding: 10px 0px;
+    width: 50%;
+    text-align: center;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* bo phan mui ten len xuong trong input number  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .add-button {
     border-width: 0;

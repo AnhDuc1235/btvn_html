@@ -77,7 +77,7 @@
                     <div class="cart-detail">
                     <div class="cart-name">
                         <span class="cart-header-name">Food</span>
-                        <span class="value">Crispy chicken breasts</span>
+                        <a href="../project-4/product.html" class="value">Crispy chicken breasts</a>
                     </div>
                     <div class="info">
                         <span class="cart-header-name">Price</span>
@@ -87,7 +87,7 @@
                         <span class="cart-header-name">Quantity</span>
                         <div class="quantity">
                             <div class="minus"><span>-</span></div>
-                            <div class="number-product"><span>1</span></div>
+                            <input class="number-product" type="number" value="1" min="1">
                             <div class="plus"><span>+</span></div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                     <div class="cart-detail">
                     <div class="cart-name">
                         <span class="cart-header-name">Food</span>
-                        <span class="value">Spaghetti Napoletana</span>
+                        <a href="../project-4/product.html" class="value">Spaghetti Napoletana</a>
                     </div>
                     <div class="info">
                         <span class="cart-header-name">Price</span>
@@ -121,7 +121,7 @@
                         <span class="cart-header-name">Quantity</span>
                         <div class="quantity">
                             <div class="minus"><span>-</span></div>
-                            <div class="number-product"><span>1</span></div>
+                            <input class="number-product" type="number" value="1" min="1">
                             <div class="plus"><span>+</span></div>
                         </div>
                     </div>
@@ -171,16 +171,20 @@
                                     </a>
                                 </div>
                                 <div class="ddl1">
-                                    <a href="#">Australia</a>
-                                    <a href="#">
-                                        <img src="./img-cart/Arrow - Down 2.png" alt="">
-                                    </a>
+                                    <select id="quantity" class="select-country1">
+                                        <option value="1" selected>Australia</option>
+                                        <option value="2">Vietnam</option>
+                                        <option value="3">Lao</option>
+                                        <option value="4">Campuchia</option>
+                                    </select>
                                 </div>
                                 <div class="ddl2">
-                                    <a href="#">New South Wales</a>
-                                    <a href="#">
-                                        <img src="./img-cart/Arrow - Down 2.png" alt="">
-                                    </a>
+                                    <select id="quantity" class="select-country2">
+                                        <option value="1" selected>America</option>
+                                        <option value="2">German</option>
+                                        <option value="3">French</option>
+                                        <option value="4">Dutch</option>
+                                    </select>
                                 </div>
                                 <input class="suburb" type="text" placeholder="Suburb">
                                 <input class="postcode" type="text" placeholder="Postcode">

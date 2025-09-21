@@ -154,9 +154,10 @@ li {
     width: 100%;
 }
 
-.cart-name, .info, .add-to-card, .subtotal {
+.cart-name, .info, .add-to-card, .subtotal, .subtotal .value {
     flex: 0 0 25%;
     text-align: center;
+    margin: 0 auto;
 }
 
 /*end cart-header */
@@ -199,8 +200,20 @@ li {
 }
 .number-product {
     border: 1px solid #FFFFFF;
-    padding: 10px 30px;
+    padding: 14px 0;
+    width: 20%;
+    text-align: center;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 16px;
 }
+/* bo phan mui ten len xuong trong input number  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .item-image img{
     width: 100%;
     padding: 15px 0;
@@ -317,6 +330,9 @@ input::placeholder{
     flex: 0 0 30%;
     text-align: center;
 }
+.subtotal .left p{
+    width: 100%;
+}
 .shipping {
     display: flex;
     align-items: flex-start;
@@ -347,9 +363,6 @@ input::placeholder{
     margin-top: 10px;
 }
 .ddl1, .ddl2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 10px;
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.8);
@@ -359,9 +372,29 @@ input::placeholder{
     color: rgba(255, 255, 255, 0.5);
 }
 
-.change-address a, .ddl1 a, .ddl2 a {
+.change-address a{
     display: flex;
     align-items: center;
+}
+.select-country1, .select-country2 {
+    background-color: transparent;
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.6rem;
+    opacity: 0.8;
+    width: 100%;
+    border: none;
+    
+}
+.select-country1 option, .select-country2 option{
+    background-color: #111114;
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.6rem;
+    opacity: 0.8;
+    width: 100%;
+    border: none;
+    
 }
 .suburb, .postcode{
     color: #FFFFFF;
