@@ -125,4 +125,4 @@ for (let i = 0; i < size; i++) {
 }
 html += "</table>";
 
-document.getElementById("chess").innerHTML = html;
+document.body.innerHTML = html;
