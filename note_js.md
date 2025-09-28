@@ -113,3 +113,48 @@ const timeout = 1000;
 
 - Toán tử nullish (??): check null hoặc undefined
   Cú pháp: a ?? b
+
+
+## Cau lenh lap, dieu kien if-else-else if
+
+
+
+## Switch case
+- Câu lệnh rẽ nhánh chỉ chấp nhận so sánh ===
+- Cú pháp 
+  switch (bieuthuc) {
+    case giatri1;    //neu bieu thuc = gia tri 1 hoạc gia tri 2 hoac gia tri 3: chay khoi lenh 1
+    case giatri2;
+    case giatri3;
+     khối lệnh 1
+     break;
+
+    case giatri4:
+     khối lệnh 2
+     break;
+
+    default:         //neu khong thuoc case nao: chay default
+     khối lệnh n
+     break;
+  }
+
+## For loops
+- Chia làm 2 nhóm 
+  Biết trước số lần lặp: for
+  Không biết trước số lần lặp: while, do...whiles
+
+  - cú pháp for:
+  for (giatrikhoitao; dieukienlap; buocnhay) {
+    //khối lệnh được lặp
+  }
+
+  // const number = parseInt(prompt('Enter an integer: '));
+
+// for(let i = 1; i <= 10; i++) {
+
+//     // multiply i with number
+//     const result = i * number;
+
+//     // display the result
+//     console.log(`${number} * ${i} = ${result}`);
+// }
