@@ -54,7 +54,7 @@ if (isPrime) {
 }
 
 
-// Bài 3: In số chẵn và số lẻ
+// Bài 3
 let m = 12;
 let even = "";
 let odd = "";
@@ -69,7 +69,7 @@ console.log("Số chẵn:", even);
 console.log("Số lẻ:", odd);
 
 
-// Bài 4: Tính tổng S = 1*2 + 2*3 + ... + n*(n+1)
+// Bài 4
 let n = 6;
 let sum = 0;
 for (let i = 1; i <= n; i++) {
@@ -77,7 +77,7 @@ for (let i = 1; i <= n; i++) {
 }
 console.log("Giá trị biểu thức: ", sum);
 
-// Bài 5: Tổng số chẵn và lẻ trong khoảng
+// Bài 5
 let a = 5;
 let b = 9;
 let sumEven = 0;
