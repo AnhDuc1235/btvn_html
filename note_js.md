@@ -158,3 +158,8 @@ const timeout = 1000;
 //     // display the result
 //     console.log(`${number} * ${i} = ${result}`);
 // }
+
+## Array
+
+- Các phương thức xử lý mảng:
+console.log(array.prototype)
