@@ -23,9 +23,9 @@ const newNames = [];
 const upperNames = [];
 
 for (i = 0; i < names.length; i++) {
-    const trimNames = names[i].trimStart().trimEnd();
+    const trimNames = names[i].trimStart().trimEnd().toLowerCase();
     newNames.push(trimNames)
-    upperNames.push(trimNames.charAt(0).toUpperCase() + trimNames.slice(1))
+    upperNames.push(trimNames.charAt(0).toUpperCase() + trimNames.slice(1).toLowerCase())
     // newNames.push(names[i].trimStart().trimEnd())
     // upperNames.push(names[i].trimStart().trimEnd().charAt(0).toUpperCase() + names[i].trimStart().trimEnd().slice(1))
 }
