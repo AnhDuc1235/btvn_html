@@ -154,17 +154,7 @@
 // console.log(numbers[0] [1]);
 
 
-// const numbers = [1, 2 , 3 , 4, 5, 6, 7, 8, 9];
-// const size = 2;
-// //yêu cầu: chunk array theo size
-// //output: [[1,2], [3,4], [5,6], [7,8], [9]]
-
-// const newNumbers = [];
-// for (i = 0; i<numbers.length; i += size) {
-//     newNumbers.push(numbers.slice(i,size + i));
-    
-// }
-// console.log(newNumbers); // chú ý bước nhảy của bài này không phải i++ mà là i+= size vì cần nó cắt mỗi 1 mảng là 2 phần tử
+// chú ý bước nhảy của bài này không phải i++ mà là i+= size vì cần nó cắt mỗi 1 mảng là 2 phần tử
 
 // cách giải khác không dùng slice:
 // Ý tưởng: đếm số lượng phần tử mảng con cuối cùng
@@ -241,11 +231,11 @@
 // })
 // console.log(newUsers);
 
-const myArr = ["item 1", "item 2", "item 3","item 2", "item 4"];
-const newArr = myArr.filter(function(value, index) {
-    return myArr.indexOf(value) === index;
-})
-console.log(newArr);
+// const myArr = ["item 1", "item 2", "item 3","item 2", "item 4"];
+// const newArr = myArr.filter(function(value, index) {
+//     return myArr.indexOf(value) === index;
+// })
+// console.log(newArr);
 
 // Về tìm hiểu: 
 // - find
