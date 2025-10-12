@@ -163,3 +163,10 @@ const timeout = 1000;
 
 - Các phương thức xử lý mảng:
 console.log(array.prototype)
+const query = {
+    keyword: "Khóa học fullstack",
+    status: "active",
+    category: 1,
+}
+
+
