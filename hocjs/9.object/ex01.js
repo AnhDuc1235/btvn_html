@@ -199,3 +199,7 @@ console.log(countObj);
 // đệ quy
 
 
+//Buổi sau:
+// Từ khóa this
+// Prototype
+// Function Constructor
