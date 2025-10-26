@@ -10,7 +10,7 @@ buttonEl.addEventListener("click", function(e) {
     } else {
         let checktask = document.querySelectorAll("#task-list p");
         for (let t of checktask) {
-            if (t.firstChild.textContent.trim() === inputEl.value.trim()) {
+            if (t.querySelector(".view-task").innerHTML.trim() === inputEl.value.trim()) {
                 alert("Task này đã tồn tại");
                 return;
             }
