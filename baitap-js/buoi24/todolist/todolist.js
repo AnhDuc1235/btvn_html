@@ -16,8 +16,18 @@ buttonEl.addEventListener("click", function(e) {
             }
         }
         let p = document.createElement("p");
-        p.innerHTML = inputEl.value;
         tasklistEl.appendChild(p);
+        let taskContent = document.createElement("label");
+        taskContent.classList.add("view-task");
+        taskContent.innerHTML = inputEl.value;
+        p.appendChild(taskContent);
+        
+        // input sửa 
+        let inputTask = document.createElement("input");
+        inputTask.value = inputEl.value;
+        inputTask.type = "text";
+        inputTask.classList.add("edit-task");
+        p.appendChild(inputTask);
         inputEl.value = "";
 
         let div = document.createElement("div");
@@ -25,27 +35,42 @@ buttonEl.addEventListener("click", function(e) {
         p.appendChild(div);
 
         let edit = document.createElement("span");
+        edit.classList.add("edit")
         edit.innerHTML = "sửa";
         div.appendChild(edit);
 
         let remove = document.createElement("span");
+        remove.classList.add("delete")
         remove.innerHTML = "xóa";
         div.appendChild(remove);
     }
     
 });
 
-//xóa, tích gạch ngang
+//sửa, xóa, tích gạch ngang
 tasklistEl.addEventListener("click", function(e){
-    if (e.target.tagName === "SPAN") {
+    if (e.target.className === "delete") {
         // e.target.parentElement.remove();
         e.target.parentElement.parentElement.remove();
     } else if (e.target.tagName === "P") {
         e.target.classList.toggle("checked")
+    } else if (e.target.className === "edit") {
+        let edit = e.target;
+        let p = edit.parentElement.parentElement;
+        let content = p.querySelector(".view-task");
+        let input = p.querySelector(".edit-task");
+        let remove = p.querySelector(".delete");
+        if (edit.innerHTML === "sửa") {
+            content.style.display = "none";
+            input.style.display = "block";
+            edit.innerHTML = "ok";
+            remove.style.display = "none"
+        } else {
+            content.innerText = input.value; 
+            content.style.display = "block";
+            input.style.display = "none";
+            edit.innerHTML = "sửa";
+            remove.style.display = "block"
+        }
     }
 })
-
-//sửa
-// tasklistEl.addEventListener("click", function(e){
-    
-// })

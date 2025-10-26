@@ -15,6 +15,8 @@
             justify-content: space-between;
             margin-top: 20px;
             user-select: none;
+            border: 1px solid grey;
+            background-color: rgba(137, 43, 226, 0.566);
         }
         .task-function {
             width: 20%;
@@ -32,9 +34,15 @@
         span:nth-child(1) {
             width: 30px;
             height: auto;
-            color: blue;
+            color: rgb(4, 255, 175);
             font-weight: 600;
             cursor: pointer;
+        }
+        .edit-task {
+            color: white;
+            border: none;
+            display: none;
+            width: 80%;
         }
     </style>
 </head>
@@ -46,7 +54,7 @@
             <button class="w-1/5 h-10 text-white bg-purple-600" type="submit">Add Task</button>
         </form>
         <div id="task-list">
-            <!-- <p class="checked">item 1</p>
+            <!-- <p class="checked"><label>okokokok</label>item 1 <div><span>sua</span><span>xoa</span></div></p>
             <p>item 2</p>
             <p>item 3</p> -->
         </div>
