@@ -35,11 +35,13 @@ buttonEl.addEventListener("click", function(e) {
     
 });
 
-//xóa
+//xóa, tích gạch ngang
 tasklistEl.addEventListener("click", function(e){
     if (e.target.tagName === "SPAN") {
         // e.target.parentElement.remove();
         e.target.parentElement.parentElement.remove();
+    } else if (e.target.tagName === "P") {
+        e.target.classList.toggle("checked")
     }
 })
 
