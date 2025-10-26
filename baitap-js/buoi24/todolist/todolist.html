@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        p.checked {
+            text-decoration: line-through;
+        }
+        p {
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .task-function {
+            width: 20%;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+        span {
+            width: 30px;
+            height: auto;
+            color: red;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        span:nth-child(1) {
+            width: 30px;
+            height: auto;
+            color: blue;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-purple-600 w-screen h-screen">
+    <div class="task-text flex-row justify-center w-6/12 h-auto m-auto mt-28 bg-[#1a1a40] px-14 pt-5 pb-16" >
+        <h1 class="text-center text-3xl font-semibold text-white w-full">Get Things Done!</h1>
+        <form id="task-form" class="flex mt-5 border border-solid border-gray-500">
+            <input class="w-4/5 text-white"  id="task-input" type="text" placeholder="What is the task today?" required>
+            <button class="w-1/5 h-10 text-white bg-purple-600" type="submit">Add Task</button>
+        </form>
+        <div id="task-list">
+            <!-- <p class="checked">item 1</p>
+            <p>item 2</p>
+            <p>item 3</p> -->
+        </div>
+    </div>
+    <script src="./todolist.js"></script>
+</body>
+</html>
