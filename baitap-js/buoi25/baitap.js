@@ -309,7 +309,7 @@ buttonEl4.addEventListener("click", function(e) {
 
         // Giá 
         let tdPrice = document.createElement("td")
-        tdPrice.innerText = "1000"
+        tdPrice.innerText = "4000"
 
         // số lượng
         let tdQuantity = document.createElement("td")
