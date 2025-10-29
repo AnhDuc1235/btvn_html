@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* .products .active {
+            color: red;
+        } */
+        /* .hidden li{
+            color: red;
+        } */
+        body {
+            user-select: none;
+        }
+        .child::after {
+            content: "▼";
+            position: absolute;
+            top: 0;
+            right: 0px;
+            /* color: red; */
+        }
+        .child.active::after {
+            content: "▼";
+            rotate: 180deg;
+        }
+        .child {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <!-- <ul>
+        <li><span>Item 1</span> <button>&times;</button></li>
+        <li><span>Item 2</span> <button>&times;</button></li>
+        <li><span>Item 3</span> <button>&times;</button></li>
+    </ul> -->
+    <!-- <div class="products">
+        <h2 class="active">product 1</h2>
+        <h2>product 2</h2>
+        <h2>product 3</h2>
+        <h2>product 4</h2>
+    </div>
+    <button class="prev-btn">prev</button>
+    <button class="next-btn">next</button> -->
+    <div class="menu flex justify-center mt-10  " >
+        <ul class="bg-black w-1/5">
+            <li class="text-white"><a href="#">menu 1</a></li>
+            <li class="child text-white">
+                <a href="https://nerdcave.com/tailwind-cheat-sheet">menu 2</a>
+                <ul class="hidden bg-green-600">
+                    <li class="text-white"><a href="#">content 1</a></li>
+                    <li class="text-white"><a href="#">content 2</a></li>
+                    <li class="text-white"><a href="#">content 3</a></li>
+                </ul>
+            </li>
+            <li class="text-white"><a href="#">menu 3</a></li>
+            <li class="text-white"><a href="#">menu 4</a></li>
+            <li class="text-white"><a href="#">menu 5</a></li>
+        </ul>
+    </div>
+    <script src="./ex04.js"></script>
+</body>
+</html>

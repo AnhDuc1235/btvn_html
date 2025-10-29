@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<style>
+    th, td, table {
+        border: 1px solid #000000;
+    }
+    input {
+        border: 1px solid #000000;
+        width: 100%;
+    }
+</style>
+<body>
+    <h3 class="font-bold size-7 w-full mb-2 mt-2">DANH SÁCH SẢN PHẨM</h3>
+    <table class="w-full" id="product-table">
+        <thead>   
+            <th width="5%">STT</th>
+            <th>Tên sản phẩm</th>
+            <th width="10%">Giá</th>
+            <th width="10%">Thêm vào giỏ hàng</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>sản phẩm 1</td>
+                <td>1000</td>
+                <td>
+                    <input type="number" id="quantity-1" value="1"
+                    class="w-11/12 block mt-0 mb-0 mr-auto  ml-auto">
+                    <button type="button" id="add-1" class="w-full bg-gray-200">Thêm vào giỏ</button>
+                </td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>2</td>
+                <td>sản phẩm 2</td>
+                <td>2000</td>
+                <td>
+                    <input type="number" id="quantity-2" value="1"
+                    class="w-11/12 block mt-0 mb-0 mr-auto  ml-auto">
+                    <button type="button" id="add-2" class="w-full bg-gray-200">Thêm vào giỏ</button>
+                </td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>3</td>
+                <td>sản phẩm 3</td>
+                <td>3000</td>
+                <td>
+                    <input type="number" id="quantity-3" value="1"
+                    class="w-11/12 block mt-0 mb-0 mr-auto  ml-auto">
+                    <button type="button" id="add-3" class="w-full bg-gray-200">Thêm vào giỏ</button>
+                </td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>4</td>
+                <td>sản phẩm 4</td>
+                <td>4000</td>
+                <td>
+                    <input type="number" id="quantity-4" value="1"
+                    class="w-11/12 block mt-0 mb-0 mr-auto  ml-auto">
+                    <button type="button" id="add-4" class="w-full w- bg-gray-200">Thêm vào giỏ</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- giỏ hàng -->
+    <h3 class="font-bold size-7 w-full mb-2 mt-4">Giỏ hàng</h3>
+    <h4>Giỏ hàng chưa có sản phẩm</h4>
+    <div id="cart-data" class="hidden">
+        <table class="w-full" id="cart-table">
+            <thead>
+                <tr>
+                    <th width="5%">STT</th>
+                    <th>Tên sản phẩm</th>
+                    <th width="20%">Giá</th>
+                    <th width="20%">Số lượng</th>
+                    <th width="20%">Thành tiền</th>
+                    <th width="5%">Xóa</th>
+                </tr>
+            </thead>
+            <!-- <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Sản phẩm 1</td>
+                    <td>1000</td>
+                    <td><input type="number" id="cart-1" value="2"></td>
+                    <td>2000</td>
+                    <td><button type="button" id="delete-item" class="bg-gray-200">Xóa</button></td>
+                </tr> 
+            </tbody>  -->
+            <tbody>
+                <tr>
+                    <td colspan="3">Tổng</td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" id="update-cart" class="bg-gray-200 p-2">Cập nhật giỏ hàng</button>
+        <button type="button" id="delete-cart" class="bg-gray-200 p-2">Xóa giỏ hàng</button>
+    </div>
+    <script src="./baitap.js"></script>
+</body>
+</html>
