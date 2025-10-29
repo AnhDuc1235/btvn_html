@@ -13,17 +13,18 @@ const deleteCart = document.querySelector("#delete-cart")
 const h4El = document.querySelector("h4")
 const updateCartEl = document.querySelector("#update-cart");
 
+// số thứ tự
 function updateCartOrder() {
     const tbody = cartTableEl.querySelectorAll("tbody");
-    for (let i = 0; i < tbody.length - 1; i++) { // bỏ hàng Tổng
+    for (let i = 0; i < tbody.length - 1; i++) {
         const tr = tbody[i].querySelector("tr");
         if (tr && tr.children.length > 0) {
-            tr.children[0].innerText = i + 1; // cập nhật lại số thứ tự
+            tr.children[0].innerText = i + 1;
         }
     }
 }
 
-
+// chức năng cứ mỗi lần bấm thêm: phần tổng sẽ tính luôn sl và tổng tiền
 function updateCart() {
     const cartInput = cartTableEl.querySelectorAll("input");
     let totalQuantity = 0;
