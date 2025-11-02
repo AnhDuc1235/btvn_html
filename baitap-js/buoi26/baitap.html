@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .up {
+        color: green;
+      }
+      .down {
+        color: red;
+      }
+      .up,
+      .down {
+        font-size: 0.85rem;
+        cursor: pointer;
+      }
+      .selected {
+        border: 1px dashed green;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: 1px solid red;
+      }
+      ul li {
+        margin: 10px 0;
+        padding: 5px 10px;
+      }
+
+
+      
+      #menu-custom {
+        display: none;
+        list-style: none;
+        position: absolute;
+        background-color: #FFFFFF;
+        border: 1px solid #e1e1e1;
+        z-index: 10;
+      }
+      #menu-custom ul {
+        list-style: none;
+        border: none;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+      }
+      #menu-custom li {
+        cursor: pointer;
+      }
+      #menu-custom li:hover {
+        background-color: #dfdfdf;
+      }
+
+      #edit-popup{
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        padding: 20px;
+        background-color: #FFFFFF;
+        border: 1px solid #c0c0c0;
+        z-index: 11;
+        display: none;
+      }
+      #input-text {
+        padding: 5px;
+        margin-right: 10px;
+      }
+      
+      .layout{
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.196);
+        z-index: 10;
+        display: none;
+      }
+      </style>
+  </head>
+  <body>
+    <!-- <div id="app">
+      <h2>F8 - DOM</h2>
+    </div>
+    <button>Add</button> -->
+    <ul>
+      <li>Item 1 <span class="up">Up</span> <span class="down">Down</span></li>
+      <li>Item 2 <span class="up">Up</span> <span class="down">Down</span></li>
+      <li>Item 3 <span class="up">Up</span> <span class="down">Down</span></li>
+      <li>Item 4 <span class="up">Up</span> <span class="down">Down</span></li>
+      <li>Item 5 <span class="up">Up</span> <span class="down">Down</span></li>
+    </ul>
+
+    <!-- menu custom -->
+    <div id="menu-custom">
+      <ul>
+        <li id="edit">Sửa</li>
+        <li id="delete">Xóa</li>
+      </ul>
+    </div>
+    <div id="edit-popup">
+      <input type="text" id="input-text"/>
+      <button id="save">Lưu</button>
+    </div>
+    <div class="layout"></div>
+    <script src="./baitap.js"></script>
+  </body>
+</html>
