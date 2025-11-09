@@ -1,27 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="vidu.css">
-</head>
-<body>
+    <link rel="stylesheet" href="vidu.css" />
+  </head>
+  <body>
     <section class="banner">
-        <img src="./f8/img/tue-minh-group.jpg" alt="">
-        <div class="overlay"></div>
-        <div class="banner-content">
-            <div class="logo">
-                <img src="/f8/img/tue-minh-group-logo.png" alt="">
-            </div>
-            <div class="info">
-                <h1>Tuệ Minh Group</h1>
-                <div class="row">
-                    <h2>Năm thành lập <span>2016</span></h2>
-                    <h2>Dự án đã phân phối <span>48</span></h2>
-                </div>
-            </div>
+      <img src="./f8/img/tue-minh-group.jpg" alt="" />
+      <div class="overlay"></div>
+      <div class="banner-content">
+        <div class="logo">
+          <img src="/f8/img/tue-minh-group-logo.png" alt="" />
         </div>
+        <div class="info">
+          <h1>Tuệ Minh Group</h1>
+          <div class="row">
+            <h2>Năm thành lập <span>2016</span></h2>
+            <h2>Dự án đã phân phối <span>48</span></h2>
+          </div>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
+
+<!-- tk
+searchInput.oninput = function () {
+  const keyword = searchInput.value.toLowerCase();
+  const filtered = posts.filter(function (p) {
+    return (
+      p.title.toLowerCase().includes(keyword) ||
+      p.body.toLowerCase().includes(keyword)
+    );
+  });
+  renderPosts(filtered);
+};
+
+//chi tiet
+async function viewDetail(id) {
+  const res = await fetch("https://dummyjson.com/posts/" + id);
+  const post = await res.json();
+  modalTitle.innerText = post.title;
+  modalBody.innerText = post.body;
+  modal.style.display = "flex";
+}
+
+closeModal.onclick = function () {
+  modal.style.display = "none";
+};
+
+document.onclick = function (e) {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+};
+
+//sort new (sx giam dan)
+btnLatest.onclick = function () {
+  btnLatest.classList.add("active");
+  btnOldest.classList.remove("active");
+  posts.sort(function (a, b) {
+    return b.id - a.id;
+  });
+  renderPosts(posts);
+};
+
+//sort old (tang dan)
+btnOldest.onclick = function () {
+  btnOldest.classList.add("active");
+  btnLatest.classList.remove("active");
+  posts.sort(function (a, b) {
+    return a.id - b.id;
+  });
+  renderPosts(posts);
+};
+
+
+
+const debounce = (callback, delay = 500) => {
+  let timeoutID;
+  return (...args) => {
+    clearTimeout(timeoutID);
+    timeoutID = setTimeout(() => {
+      callback(...args);
+    }, delay);
+  };
+};
+
+const addSearchEvent = () => {
+  const searchEl = document.querySelector("#search");
+  searchEl.addEventListener(
+    "input",
+    debounce((e) => {
+      const value = e.target.value.toLowerCase().trim();
+      const filtered = posts.filter(
+        (p) =>
+          p.title.toLowerCase().includes(value) ||
+          p.body.toLowerCase().includes(value)
+      );
+      renderPosts(filtered);
+    })
+  );
+};
+
+getPosts().then(addSearchEvent);
+
+
+
+
+
+function createAddPostForm() {
+  const addPostForm = document.createElement('div');
+  addPostForm.classList.add('add-post-form');
+
+  // Create Title input
+  const titleInput = document.createElement('input');
+  titleInput.id = 'new-title';
+  titleInput.type = 'text';
+  titleInput.placeholder = 'Enter post title';
+
+  // Create Body input
+  const bodyInput = document.createElement('textarea');
+  bodyInput.id = 'new-body';
+  bodyInput.placeholder = 'Enter post content';
+
+  // Create Save Button
+  const saveButton = document.createElement('button');
+  saveButton.id = 'save-post';
+  saveButton.innerText = 'Save Post';
+
+  // Append inputs and button to the form
+  addPostForm.appendChild(titleInput);
+  addPostForm.appendChild(bodyInput);
+  addPostForm.appendChild(saveButton);
+
+  // Append form to the page (or a specific container)
+  document.body.appendChild(addPostForm);
+
+  // Event listener for saving the post
+  saveButton.addEventListener('click', async function () {
+    const newTitle = titleInput.value;
+    const newBody = bodyInput.value;
+
+    // Validate inputs
+    if (!newTitle || !newBody) {
+      alert('Title and Body are required!');
+      return;
+    }
+
+    const newPost = {
+      title: newTitle,
+      body: newBody,
+      userId: Math.floor(Math.random() * 10) + 1,  // Random userId for this example
+    };
+
+    // Send the new post to the API
+    const response = await fetch('https://dummyjson.com/posts/add', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(newPost),
+    });
+
+    const data = await response.json();
+    posts.unshift(data);  // Add the new post to the beginning of the list
+    renderPosts(posts);
+
+    // Reset inputs after saving
+    titleInput.value = '';
+    bodyInput.value = '';
+
+    // Optionally, close the form or reset UI as needed
+  });
+}
+
+// Initialize
+getPosts();
+addSearchEvent();
+createAddPostForm(); // 
+-->
