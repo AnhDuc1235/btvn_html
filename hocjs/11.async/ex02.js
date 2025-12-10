@@ -194,3 +194,6 @@ try {
 // -> log ra trước, promise chạy xong cuối cùng settimeout sẽ chạy (settimeout luôn chạy sau cùng)
 
 
+
+
+
