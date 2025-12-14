@@ -21,11 +21,6 @@ function Posts() {
   const [isOpenModal, setIsOpenModal] = useState(false);
   const [page, setPage] = useState(1);
   const [totalPage, setTotalPage] = useState(0);
-  const [mode, setMode] = useState(null);
-  const [dataBlog, setDataBlog] = useState({
-    title: "",
-    body: "",
-  });
   const [sortType, setSortType] = useState("desc");
 
   const searchApi = async (value) => {
@@ -96,49 +91,6 @@ function Posts() {
     setPosts((prev) => prev.filter((p) => p.id !== id));
   };
 
-  const handleSubmit = async (currentId) => {
-    if (mode === "add") {
-      const res = await fetch(`${BASE_URL}/add`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...dataBlog, userId: 5 }),
-      });
-      const data = await res.json();
-      setPosts((prev) => [data, ...prev]);
-    }
-    if (mode === "edit") {
-      const res = await fetch(`${BASE_URL}/${currentId}`, {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(dataBlog),
-      });
-      const data = await res.json();
-      setPosts((prev) => prev.map((p) => (p.id === currentId ? data : p)));
-    }
-    setMode(null);
-    setDataBlog({ title: "", body: "" });
-  };
-
-  const handleAddMode = () => {
-    setMode("add");
-    setDataBlog({
-      title: "",
-      body: "",
-    });
-  };
-
-  const handleEditMode = (id) => {
-    setMode("edit");
-    setId(id);
-    const post = posts.find((p) => p.id === id);
-    if (post) {
-      setDataBlog({
-        title: post.title,
-        body: post.body,
-      });
-    }
-  };
-
   const onSearchChange = (e) => {
     debouncedSearch(e.target.value.trim());
   };
@@ -162,9 +114,7 @@ function Posts() {
           className="w-full border p-2"
           onChange={onSearchChange}
         />
-        <button onClick={handleAddMode} className="border rounded-sm p-1">
-          Them moi
-        </button>
+        <button className="border rounded-sm p-1">Them moi</button>
         <div className="flex gap-3">
           <button
             onClick={() => setSortType("desc")}
@@ -208,12 +158,7 @@ function Posts() {
                     Xem chi tiet
                   </button>
                   <div className="flex gap-5">
-                    <button
-                      onClick={() => handleEditMode(post.id)}
-                      className="font-bold cursor-pointer"
-                    >
-                      Sua
-                    </button>
+                    <button className="font-bold cursor-pointer">Sua</button>
                     <button
                       onClick={() => handleDelete(post.id)}
                       className="font-bold cursor-pointer text-red-600"
@@ -273,105 +218,6 @@ function Posts() {
           </>
         ) : (
           ""
-        )}
-      </div>
-
-      <div>
-        {mode === "add" && (
-          <div>
-            <div
-              onClick={handleOut}
-              className="fixed inset-0 bg-black opacity-20"
-            ></div>
-            <div className="border p-5 rounded-xl bg-white fixed top-[30%] left-[20%] w-[60%] flex flex-col">
-              <button
-                onClick={handleOut}
-                className="cursor-pointer text-4xl flex justify-end"
-              >
-                &times;
-              </button>
-              <div className="flex flex-col gap-2">
-                <input
-                  className="border p-1"
-                  type="text"
-                  placeholder="title"
-                  value={dataBlog.title}
-                  onChange={(e) =>
-                    setDataBlog({
-                      title: e.target.value,
-                      body: dataBlog.body,
-                    })
-                  }
-                />
-                <textarea
-                  type="text"
-                  className="border p-1"
-                  placeholder="body"
-                  value={dataBlog.body}
-                  onChange={(e) =>
-                    setDataBlog({
-                      title: dataBlog.title,
-                      body: e.target.value,
-                    })
-                  }
-                />
-                <button
-                  className="flex justify-end cursor-pointer"
-                  onClick={() => handleSubmit()}
-                >
-                  Them moi
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
-        {mode === "edit" && (
-          <div>
-            <div
-              onClick={handleOut}
-              className="fixed inset-0 bg-black opacity-20"
-            ></div>
-            <div className="border p-5 rounded-xl bg-white fixed top-[30%] left-[20%] w-[60%] flex flex-col">
-              <button
-                onClick={handleOut}
-                className="cursor-pointer text-4xl flex justify-end"
-              >
-                &times;
-              </button>
-              <div className="flex flex-col gap-2">
-                <input
-                  type="text"
-                  className="border p-1"
-                  placeholder="title"
-                  value={dataBlog.title}
-                  onChange={(e) =>
-                    setDataBlog({
-                      title: e.target.value,
-                      body: dataBlog.body,
-                    })
-                  }
-                />
-                <textarea
-                  type="text"
-                  className="border p-1"
-                  placeholder="body"
-                  value={dataBlog.body}
-                  onChange={(e) =>
-                    setDataBlog({
-                      title: dataBlog.title,
-                      body: e.target.value,
-                    })
-                  }
-                />
-                <button
-                  className="flex justify-end cursor-pointer"
-                  onClick={() => handleSubmit()}
-                >
-                  Luu
-                </button>
-              </div>
-            </div>
-          </div>
         )}
       </div>
     </div>
