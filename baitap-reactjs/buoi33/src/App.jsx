@@ -3,6 +3,8 @@ import Posts from './pages/Posts'
 import ExerciseRef from './ExerciseRef'
 import ReactContext from './ReactContext'
 import MoneyConvert from './MoneyConvert/MoneyConvert'
+import Reducer from './Reducer'
+import TodoReducer from './TodoReducer'
 
 export default function App() {
   return (
@@ -11,7 +13,9 @@ export default function App() {
       {/* < Posts /> */}
       {/* <ExerciseRef/> */}
       {/* <ReactContext /> */}
-      <MoneyConvert/>
+      {/* <MoneyConvert/> */}
+      {/* <Reducer/> */}
+      <TodoReducer/>
     </div>
   )
 }
