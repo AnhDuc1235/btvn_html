@@ -1,0 +1,11 @@
+CÁC COMPONENT HAY DÙNG: 
+    - Dark Mode (chuyển giao diện sáng / tối (light – dark))
+    - Dialog (Modal) (Hiển thị hộp thoại nổi để xác nhận, nhập dữ liệu, thông báo)
+    - Alert (Thông báo quan trọng cho người dùng (warning, error, info))
+    - Input, Textarea, Checkbox (Các component nhập dữ liệu form)
+    - Button (Thực hiện hành động (submit, save, delete, click…))
+    - Dropdown (Hiển thị danh sách lựa chọn khi click)
+    - Soner (Toastify) (Thông báo nhanh, tự biến mất (success, error, loading…))
+    - Spinner (Hiển thị trạng thái đang tải dữ liệu)
+    - Pagination (Chia dữ liệu thành nhiều trang)
+    - Skeleton (Khung giả khi dữ liệu chưa load xong)

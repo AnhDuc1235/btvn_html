@@ -22,3 +22,5 @@ export default function App() {
 
 
 //dispatch --> reducer --> redux state --> subscribe --> react xử lý tiếp (vì state lúc này đang là state của redux)
+
+//function --> return action object --> action creator
