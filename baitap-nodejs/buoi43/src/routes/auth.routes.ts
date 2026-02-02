@@ -1,6 +1,4 @@
 import express from "express"
-import { register } from "node:module"
-import { Schema } from "zod/v3"
 import { validate } from "../middlewares/auth.middleware"
 import { loginRequest, RegisterRequest } from "../validators/auth.schema"
 import { authController } from "../controllers/auth.controller"

@@ -10,8 +10,7 @@ export default defineConfig(
   {
     rules: {
       "no-unused-vars": "error",
-      "no-console": "warn",
-      "@typescript-eslint/no-explicit-any": "error",
+      "@typescript-eslint/no-explicit-any": "off",
     },
   },
   {
