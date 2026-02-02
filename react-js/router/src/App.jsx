@@ -32,10 +32,9 @@ export default function App() {
           <Route path="/login" element={<Login/>}/>
         </Route>
         <Route element={<AuthMiddleware/>}>
-          <Route path="/admin" element={<AdminLayout />}>
+          <Route path="/admin" element={<AdminLayout />}/>
           <Route index element={<Dashboard />} />
           <Route path="users" element={<Users />} />
-        </Route>
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
