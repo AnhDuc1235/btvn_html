@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  padding: 10px 50px 10px 5px;
+}
+h3 {
+  color: red;
+}
+button {
+  color: white;
+  background-color: rgba(0, 42, 255, 0.634);
+  border-width: 0;
+  padding: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,6 @@
+{
+  "users": {
+    "email.required": "Email không được để trống",
+    "password.required": "password không được để trống"
+  }
+}
